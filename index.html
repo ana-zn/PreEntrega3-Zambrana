@@ -10,7 +10,7 @@
         <link rel="icon" href="../Imagenes/favicon.svg" type="image/png">
         <!-- Stylesheets -->
         <!-- Main CSS -->
-        <link rel="stylesheet" href="../Css/styles.css">
+        <link rel="stylesheet" href="/css/style.css">
         <!-- Boxicons CSS for icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!-- Google Fonts Preconnect -->
@@ -22,8 +22,10 @@
     <!--Contenedor Header-->
     <header class="main__header">
         <div class="header__navbar">
-            <nav class="nav__container nav--container">
-                <ul>
+           <!--Contenedor de la barra de navegación-->
+            <nav class="nav__container header__nav--home">
+                <!-- Links del Menú -->
+                <ul class="header__nav-list">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="../Html/menu.html">Menú</a></li>
                     <li><a href="../Html/productos.html">Productos</a></li>
@@ -32,36 +34,39 @@
                     <li><a href="../Html/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-            <!--Svg del Logo-->
+            <!--Svg - Contednedor del Logo-->
             <div class="header___logo">
                 <img src="../Imagenes/crumblylogo-postive.svg" alt="logo de crumbly">
             </div>
-            <!--Contenedor del buscador-->
-            <section class="header__user">
+             <!-- Contenedor del buscador y opciones de usuario -->
+            <section class="header__search">
+                <!--Campo de busqueda-->
                 <div class="search-container home">
                     <input type="text">
                 </div>
-                <!--Contendedor del carrito de compras y perfil de usuario-->
-                <div class="container-user"> 
-                    <div class="navbar-icons">
-                        <div class="icon-item">
+                <!-- Contenedor del carrito de compras y perfil de usuario -->
+                <div class="header__user"> 
+                    <div class="header__user-items">
+                         <!--Icono del perfil de usuario-->
+                        <div class="header__user-icon">
                             <a href="#"><span class="material-symbols-outlined home">person</span></a>
                         </div>
-                        <div class="icon-item">
+                         <!--Icono del carrito de compras-->
+                        <div class="header__user-icon">
                             <a href="#"> <span class="material-symbols-outlined home">shopping_basket</span></a>  
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <div class="title-container-primary">
-            <h1>
+        <!--Contenedor del titulo principal y botón de llamada de acción-->
+        <div class="header__title">
+            <h1 class="header__title-primary"">
                 Disfruta de una parada saludable y encuentra ingredientes que nutren tu vida
             </h1>
-            <a href="#">Comprar ahora</a>
+            <!--Boton de acción-->
+            <a href="#" class="header__title-button">Comprar ahora</a>
         </div>
     </header>
-
-
 </body>
 </html>
