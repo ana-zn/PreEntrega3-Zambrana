@@ -1,0 +1,18 @@
+.content__container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    gap: 32px;
+    .title__container{
+        h1{
+            font-family: $secondary-font;
+            font-size: 4rem;
+            font-weight: 400;
+            letter-spacing: -2px;
+            text-align: center;
+            line-height: 90%;
+            margin-top: 56px;
+        }
+    }
+}
+

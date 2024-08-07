@@ -1,0 +1,26 @@
+@import "../utilities/variables"; 
+/*Contenedor Header*/
+.banner__container{
+    display: inline; 
+    width: 100%;
+    background-color: $secondarycolor; 
+    padding: 24px 0;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin-top:32px; 
+    .text {
+        display: inline-block;
+        animation: scroll-text 10s linear infinite;
+        text-transform: uppercase;
+    }
+    //Autoplay de texto
+    @keyframes scroll-text {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+    }
+}
+

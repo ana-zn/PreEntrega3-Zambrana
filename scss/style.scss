@@ -1,0 +1,11 @@
+//
+@import "base/reset"; 
+//Estilo de Variables
+@import "utilities/variables"; 
+//Carpeta Layout
+@import "layout/header"; 
+@import "layout/main"; 
+@import "layout/section-title";
+
+//Estilo banner
+@import "banners/banner-autolayout"; 

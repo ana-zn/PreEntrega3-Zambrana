@@ -1,0 +1,75 @@
+@import "../utilities/variables"; 
+/*Contenedor Header*/
+.main__header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 80px;
+    /*Barra de navegación*/
+    .header__navbar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        .nav__container{
+            display: flex;
+            flex-grow: 1;
+            /*Links del Menú */
+            .header__nav-list{
+                display: flex;
+                flex-direction: row;
+                flex-grow:1; 
+                justify-content: space-between;
+                /*lista desordenada*/
+                li{
+                    list-style: none;  
+                    flex-grow: 1;
+                    text-align: center;
+                    /*links*/
+                    a{
+                        width: 100%;
+                        text-decoration: none;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    //Contenedor logo 
+    .header___logo{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        width: 240px;
+       }
+    //Contenedor usuario y barra de busqueda
+    .header__search{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-grow: 1;
+        gap: 16px;
+        //barra de busqueda
+        .search-container{
+            display: flex; 
+            flex-grow: 1;
+            input{
+                width: 100%;
+                height: 34px;
+                border:2px solid $primarycolor; //Crear una variable para border
+                background-color: transparent;
+                border-radius: 100px;
+                padding: 0 32px;
+                box-sizing: border-box;
+            }
+        }
+        //Contenedor iconos de usuario y carrito de compras 
+        .header__user-items{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
