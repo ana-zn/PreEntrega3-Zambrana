@@ -98,25 +98,60 @@
   gap: 56px;
 }
 
-.main___container {
-  display: flex;
-  flex-direction: column;
-  gap: 56px;
-}
-.main___container .content__container {
+.content__container {
   display: flex;
   flex-direction: column;
   padding: 0 80px;
   gap: 32px;
 }
-.main___container .content__container .title__container h1 {
+.content__container .title__container .title__text {
   font-family: "Orelega One", serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: -2px;
   text-align: center;
   line-height: 90%;
   margin-top: 56px;
+}
+.content__container .info__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+.content__container .info__container .item__container {
+  flex: 1;
+  max-width: 50%;
+}
+.content__container .info__container .item__container--primary img {
+  width: 100%;
+  height: 504px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+.content__container .info__container .item__container--secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 32px;
+  padding-top: 32px;
+}
+.content__container .info__container .item__container--secondary p {
+  line-height: 150%;
+}
+.content__container .info__container .item__container--secondary a {
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid #25282A;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 /*-------------------Variables-------------*/
@@ -145,5 +180,7 @@
     transform: translateX(-100%);
   }
 }
+
+@im;
 
 /*# sourceMappingURL=style.css.map */
