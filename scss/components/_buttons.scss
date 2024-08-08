@@ -1,0 +1,22 @@
+
+.container__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    gap:32px; 
+    padding-top: 32px;
+    .btn{
+        display: inline-flex; 
+        width: auto;
+        align-items: center;
+        justify-content: space-between; 
+        box-sizing: border-box;
+        padding: 8px 16px; 
+        background-color: transparent;
+        border: 2px solid $primarycolor; 
+        border-radius: 50px;
+        font-size: $font-size-l;
+        cursor: pointer; 
+        text-align: center;
+    }
+}

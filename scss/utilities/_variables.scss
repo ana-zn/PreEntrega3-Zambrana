@@ -3,10 +3,28 @@
 
 /*---Colores---*/
 $primarycolor: #25282A; 
-$secondarycolor:#FFEB80; 
+$secondarycolor:#fff; 
+//grey scale
+$gray-light: #F4F4F4;         /* Gris claro */
+$gray-dark: #686565;         /* Gris oscuro */
+//Colores Adicionales 
+$third-color: #139C82;
+$fourth-color:#FFEB80; 
 
-/*---Font Family*/
+
+/*Tipografias*/
+/*---Font Family---*/
 //Connect Google Fonts 
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 $primary-font:"Roboto", sans-serif;
 $secondary-font:"Orelega One", serif;
+
+/*Tamaño de fuentes*/
+/*Font Size*/
+$font-size-xxxl: 4.5rem; //h1(Desktop)
+$font-size-xxl: 4rem; //h2 (Desktop)
+$font-size-xl: 1.5rem;
+$font-size-l: 1.25rem; 
+$font-size-m: 1rem; //Parrafos, link (Desktop)
+$font-size-s: 0.875rem; 
+$font-size-xs: 1.25rem; 

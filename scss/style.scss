@@ -6,9 +6,11 @@
 @import "layout/header"; 
 @import "layout/main"; 
 @import "layout/section-title";
+@import "layout/grid"; 
 
 //Estilo banner
 @import "banners/banner-autoplay"; 
 
 //Carpeta Components
-@import "components/container-card"
+@import "components/container-card"; 
+@import "components/buttons";
