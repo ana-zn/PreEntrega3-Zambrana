@@ -1,5 +1,5 @@
 @import "../utilities/variables"; 
-/*Contenedor Header*/
+/*Contenedor Header estándar*/
 .main__header{
     display: flex;
     align-items: flex-start;
@@ -70,4 +70,34 @@
             flex-direction: row;
         }
     }
+   
+}
+//-----------------------Header HOME, archivo index.html-------------------------
+.header--home{
+    background-image: url(../../aseets/imagenes/home/background.png);
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    height: 784px;
+    margin-bottom: 56px;
+    .nav-bar--home{
+        .nav-list--header{
+            a{
+                color: $secondarycolor;
+            }
+        }
+    }
+    .header__search{
+        .search-container{
+            input{
+                border:2px solid $secondarycolor; //Crear una variable para border
+            }
+        }
+        //Contenedor iconos de usuario y carrito de compras 
+        .header__user-items span{
+            color: $secondarycolor;
+        }
+    }
+    
 }

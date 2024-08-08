@@ -40,7 +40,7 @@ a {
 /*---Font Family---*/
 /*Tamaño de fuentes*/
 /*Font Size*/
-/*Contenedor Header*/
+/*Contenedor Header estándar*/
 .main__header {
   display: flex;
   align-items: flex-start;
@@ -107,6 +107,25 @@ a {
 .main__header .header__search .header__user-items {
   display: flex;
   flex-direction: row;
+}
+
+.header--home {
+  background-image: url(../../aseets/imagenes/home/background.png);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  height: 784px;
+  margin-bottom: 56px;
+}
+.header--home .nav-bar--home .nav-list--header a {
+  color: #fff;
+}
+.header--home .header__search .search-container input {
+  border: 2px solid #fff;
+}
+.header--home .header__search .header__user-items span {
+  color: #fff;
 }
 
 .main___container {
