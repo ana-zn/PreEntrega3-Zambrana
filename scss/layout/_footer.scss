@@ -1,0 +1,67 @@
+//Contenedor Principal Footer
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    width: 100%;
+    //Primer Contenedor del footer
+    .footer__primary{
+        display: flex;
+        padding: 0 80px;
+        justify-content: space-between;
+        height: 100%;
+        margin-bottom: 80px;
+        .footer__links{
+            display: flex;
+            justify-content: space-between;
+            gap:8px; 
+            width: 75%;
+            text-transform: uppercase;
+            .footer__link-item{
+                width: 100%;
+                .footer__title{
+                    text-transform: uppercase;
+                    font-size: $font-size-xl; 
+                    margin-bottom: 48px;
+                }
+                .footer__list{
+                    .footer__list-item{
+                        margin: 8px 0; 
+                        list-style: none;
+                        width: 100%;
+                        .footer__link{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__social{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+            .footer__social-items{
+                .footer__social-list{
+                    display: flex;
+                    .footer__social-list-item{
+                        list-style: none;
+                        width: 100%;
+                        .footer__social-link{
+                            width: 100%;
+                        }
+                        i{
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Footer Secundario
+    .footer__secondary{
+        text-align: center;
+        border-top: 2px solid $primarycolor;
+        padding: 24px 0;
+    }
+}
