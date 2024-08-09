@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -40,7 +41,7 @@ a {
 /*---Font Family---*/
 /*Tamaño de fuentes*/
 /*Font Size*/
-/*Contenedor Header estándar*/
+/* Contenedor Header estándar */
 .main__header {
   display: flex;
   align-items: flex-start;
@@ -49,7 +50,9 @@ a {
   overflow: hidden;
   width: 100%;
   padding: 0 80px;
-  /*Barra de navegación*/
+  /* Barra de navegación */
+  /* Contenedor logo */
+  /* Contenedor usuario y barra de búsqueda */
 }
 .main__header .header__navbar {
   display: flex;
@@ -60,25 +63,42 @@ a {
 .main__header .header__navbar .nav__container {
   display: flex;
   flex-grow: 1;
-  /*Links del Menú */
+  /* Links del Menú */
 }
 .main__header .header__navbar .nav__container .header__nav-list {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   justify-content: space-between;
-  /*lista desordenada*/
+  /* Lista desordenada */
 }
-.main__header .header__navbar .nav__container .header__nav-list li {
+.main__header .header__navbar .nav__container .header__nav-list .header__nav-list-item {
+  flex: 1 1 0;
   list-style: none;
-  flex-grow: 1;
   text-align: center;
-  /*links*/
+  /* Links */
 }
-.main__header .header__navbar .nav__container .header__nav-list li a {
+.main__header .header__navbar .nav__container .header__nav-list .header__nav-list-item .header__nav-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  /* Transiciones */
+}
+.main__header .header__navbar .nav__container .header__nav-list .header__nav-list-item .header__nav-link:after {
+  content: "";
+  position: absolute;
+  background-color: #25282A;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s;
+}
+.main__header .header__navbar .nav__container .header__nav-list .header__nav-list-item .header__nav-link:hover:after {
   width: 100%;
 }
-.main__header .header___logo {
+.main__header .header__logo {
   display: flex;
   justify-content: center;
   flex-grow: 1;
@@ -90,6 +110,8 @@ a {
   align-items: center;
   flex-grow: 1;
   gap: 16px;
+  /* Barra de búsqueda */
+  /* Contenedor iconos de usuario y carrito de compras */
 }
 .main__header .header__search .search-container {
   display: flex;
@@ -109,17 +131,22 @@ a {
   flex-direction: row;
 }
 
+/* Header HOME, archivo index.html */
 .header--home {
-  background-image: url(../aseets/imagenes/home/background.png);
+  background-image: url(/aseets/imagenes/home/background.png);
   flex-direction: column;
   justify-content: flex-start;
   background-size: cover;
   background-position: center;
   height: 784px;
   margin-bottom: 56px;
+  transition: background-color 0.3s ease;
 }
-.header--home .nav-bar--home .nav-list--header a {
+.header--home .nav-bar--home .nav-list--home .nav-link--home {
   color: #fff;
+}
+.header--home .header__search {
+  /* Contenedor iconos de usuario y carrito de compras */
 }
 .header--home .header__search .search-container input {
   border: 2px solid #fff;
@@ -139,6 +166,35 @@ a {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  /*padding: 56px 80px;*/
+}
+.register .register__divider {
+  border: none;
+  width: 100%;
+  height: 2px;
+  background-color: #25282A;
+}
+.register .register__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.register .register__text {
+  font-size: 1.25rem;
+}
+.register .register__button {
+  display: flex;
+  align-items: center;
+  width: 90%;
 }
 
 .title__container .title__text {
@@ -178,16 +234,16 @@ a {
   line-height: 150%;
 }
 
-.grid--container {
+.grid__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-.grid--container .grid-container__item, .grid--container .grid-container__item .grid-container__image {
+.grid__container .grid-container__item, .grid__container .grid-container__item .grid-container__image {
   width: 100%;
   height: 340px;
 }
-.grid--container .grid-container__item .grid-container__image {
+.grid__container .grid-container__item .grid-container__image {
   object-fit: cover;
   border-radius: 32px;
 }
@@ -285,6 +341,43 @@ a {
   }
 }
 
+/*Banner Galeria de Imagenes*/
+.banner-group {
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 464px;
+  justify-content: space-between;
+}
+.banner-group .banner-group__item {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-group .banner-group__item .banner-group__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Banner Gradiente*/
+.banner-gradient {
+  height: auto;
+  text-align: left;
+  padding: 80px;
+  background: rgb(255, 235, 128);
+  background: linear-gradient(90deg, rgb(255, 235, 128) 0%, rgb(247, 183, 144) 66%, rgb(242, 153, 153) 100%);
+}
+.banner-gradient .banner-gradient__heading {
+  font-size: 4rem;
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  line-height: 90%;
+  padding: 32px 0;
+}
+
 .area-container-card {
   display: flex;
   flex-direction: column;
@@ -328,7 +421,7 @@ a {
   color: #25282A;
   padding: 8px;
   border-radius: 50px;
-  font-size: 1.25rem;
+  font-size: 0.5rem;
   font-weight: 400;
 }
 .area-container-card .card-container .card-container__item .card-item__content {
@@ -399,9 +492,8 @@ a {
   flex-direction: column;
   justify-content: start;
   gap: 32px;
-  padding-top: 32px;
 }
-.container__button .btn {
+.container__button .btn, .container__button .btn--4 {
   display: inline-flex;
   width: auto;
   align-items: center;
@@ -409,16 +501,209 @@ a {
   box-sizing: border-box;
   padding: 8px 16px;
   background-color: transparent;
-  border: 2px solid #25282A;
   border-radius: 50px;
   font-size: 1.25rem;
   cursor: pointer;
   text-align: center;
+  border: 2px solid #25282A;
+}
+.container__button .btn--1, .container__button .btn--3 {
+  border: 2px solid #25282A;
+}
+.container__button .btn--2 {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.container__button .btn--2:hover {
+  background-color: #fff;
+  color: #25282A;
+}
+.container__button .btn--3 {
+  font-size: 1rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.container__button .btn--4 {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 16px 24px;
+  gap: 16px;
+  font-size: 1.25rem;
+  letter-spacing: -1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.container__button--secondary {
+  padding-top: 16px;
+}
+
+.title-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 156px;
+  gap: 40px;
+}
+.title-primary .title-primary__heading {
+  font-size: 4rem;
+  font-family: "Orelega One", serif;
+  color: #fff;
+  width: 90%;
+  font-weight: 400;
+  text-align: right;
 }
 
 .title-container__secondary h2 {
   font-size: 4rem;
   text-align: center;
+}
+
+.title-container__third {
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+}
+.title-container__third .title-container__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 8px;
+}
+.title-container__third .title-container__line {
+  border: none;
+  width: 100%;
+  height: 2px;
+  background-color: #25282A;
+}
+
+.container__services {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  gap: 16px;
+  /* Elemento de Servicio Individual */
+  /* Imagen del Servicio */
+  /* Título del Servicio */
+  /* Descripción del Servicio */
+}
+.container__services .services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  width: 100%;
+}
+.container__services .services__image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.container__services .services__title {
+  text-transform: uppercase;
+}
+.container__services .services__description {
+  color: #686565;
+}
+
+/*-------------------Variables-------------*/
+/*---Colores---*/
+/* Gris claro */
+/* Gris oscuro */
+/*Tipografias*/
+/*---Font Family---*/
+/*Tamaño de fuentes*/
+/*Font Size*/
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content .content__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+.content .content__info .content__primary, .content .content__info .content__secondary {
+  flex: 1;
+  max-width: 50%;
+}
+.content .content__info .content__primary .content__image, .content .content__info .content__secondary .content__image {
+  width: 100%;
+  height: 504px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+.content .content__info .content__secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 32px;
+  padding-top: 32px;
+}
+.content .content__info .content__secondary .content__title {
+  font-family: "Orelega One", serif;
+  font-size: 4rem;
+  line-height: 70%;
+  font-weight: 400;
+}
+.content .content__info .content__secondary .content__text {
+  line-height: 150%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.contact-container .contact-container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+.contact-container .contact-container__form .form__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-container .contact-container__form .form__input-group .form__input, .contact-container .contact-container__form .form__input-group .form__textarea {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid #25282A;
+  padding: 8px;
+}
+.contact-container .contact-container__form .form__input-group .form__textarea {
+  padding: 16px 0px 32px 0px;
+  min-width: 100%;
+  resize: vertical;
+  font-family: var(--primary-font);
+}
+.contact-container .contact-container__form .form__input-group .form__select {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #25282A;
+  padding: 8px;
+  color: #25282A;
+}
+
+.faq-container {
+  width: 50%;
+}
+.faq-container .faq-container__item .faq-container__summary {
+  padding: 24px;
+  border-bottom: 2px solid #25282A;
+}
+.faq-container .faq-container__item .faq-container__content {
+  color: #686565;
+  padding: 32px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

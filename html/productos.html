@@ -19,45 +19,45 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0">
     </head>
 <body>
-    <!--Contenedor Header-->
-    <header class="main__header header--secondary">
-        <div class="header__navbar">
-           <!--Contenedor de la barra de navegación-->
-            <nav class="nav__container header__nav--home">
-                <!-- Links del Menú -->
-                <ul class="header__nav-list">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../html/menubebidas.html">Menú</a></li>
-                    <li><a href="../html/productos.html">Productos</a></li>
-                    <li><a href="../html/nosotros.html">Nosotros</a></li>
-                    <li><a href="../html/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <!--Svg - Contednedor del Logo-->
-            <div class="header___logo">
-                <img src="/aseets/svg/crumblylogo.svg" alt="logo de crumbly">
+        <!--Contenedor Header-->
+        <header class="main__header">
+            <div class="header__navbar">
+                <!-- Contenedor de la barra de navegación -->
+                <nav class="nav__container">
+                    <!-- Links del Menú -->
+                    <ul class="header__nav-list nav-list--header">
+                        <li class="header__nav-list-item"><a class="header__nav-link" href="../index.html">Inicio</a></li>
+                        <li class="header__nav-list-item"><a class="header__nav-link" href="../html/menubebidas.html">Menú</a></li>
+                        <li class="header__nav-list-item"><a class="header__nav-link" href="../html/productos.html">Productos</a></li>
+                        <li class="header__nav-list-item"><a class="header__nav-link" href="../html/nosotros.html">Nosotros</a></li>
+                        <li class="header__nav-list-item"><a class="header__nav-link" href="../html/contacto.html">Contacto</a></li>
+                        
+                    </ul>
+                </nav>
+                <!-- Svg - Contenedor del Logo -->
+                <div class="header__logo">
+                    <img src="../aseets/svg/crumblylogo.svg" alt="logo de crumbly">
+                </div>
+                <!-- Contenedor del buscador y opciones de usuario -->
+                <section class="header__search">
+                    <!-- Campo de búsqueda -->
+                    <div class="search-container">
+                        <input type="text">
+                    </div>
+                    <!-- Contenedor del carrito de compras y perfil de usuario -->
+                    <div class="header__user-items">
+                        <!-- Icono del perfil de usuario -->
+                        <div class="header__user-icon">
+                            <a href="#"><span class="material-symbols-outlined">person</span></a>
+                        </div>
+                        <!-- Icono del carrito de compras -->
+                        <div class="header__user-icon">
+                            <a href="#"><span class="material-symbols-outlined">shopping_basket</span></a>
+                        </div>
+                    </div>
+                </section>
             </div>
-             <!-- Contenedor del buscador y opciones de usuario -->
-            <section class="header__search">
-                <!--Campo de busqueda-->
-                <div class="search-container">
-                    <input type="text">
-                </div>
-                <!-- Contenedor del carrito de compras y perfil de usuario -->
-                <div class="header__user-items">
-                    <!--Icono del perfil de usuario-->
-                    <div class="header__user-icon">
-                    <a href="#"><span class="material-symbols-outlined home">person</span></a>
-                    </div>
-                    <!--Icono del carrito de compras-->
-                    <div class="header__user-icon">
-                    <a href="#"> <span class="material-symbols-outlined home">shopping_basket</span></a>  
-                    </div>
-                </div>
-                </div>
-            </section>
-        </div>
-    </header>
+        </header>
     <!-------------------------------------------------------------------------------------------------------->
     <!-------------------------- Contenedor Main------------------------>
     <main class="main___container">

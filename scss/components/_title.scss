@@ -1,8 +1,42 @@
-
+.title-primary{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top:156px; 
+    gap: 40px;
+    .title-primary__heading{
+        font-size: $font-size-xxl; 
+        font-family: $secondary-font; 
+        color: $secondarycolor; 
+        width: 90%;
+        font-weight: 400;
+        text-align: right;
+    }
+}
 .title-container__secondary{
     h2{
         font-size: $font-size-xxl; 
         text-align: center; 
     }
 
+}
+.title-container__third{
+    display:flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    .title-container__title{
+        font-size: $font-size-xxl; 
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+        padding: 0 8px;
+    }
+    .title-container__line{
+        border: none; 
+        width: 100%;
+        height: 2px; 
+        background-color:$primarycolor; 
+    }
 }

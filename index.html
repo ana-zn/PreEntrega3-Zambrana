@@ -19,22 +19,23 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0">
     </head>
 <body>
+    
     <!--Contenedor Header-->
     <header class="main__header header--home">
         <div class="header__navbar nav-bar--home">
             <!-- Contenedor de la barra de navegación -->
             <nav class="nav__container header__nav--home">
                 <!-- Links del Menú -->
-                <ul class="header__nav-list nav-list--header">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html/menubebidas.html">Menú</a></li>
-                    <li><a href="html/productos.html">Productos</a></li>
-                    <li><a href="html/nosotros.html">Nosotros</a></li>
-                    <li><a href="html/contacto.html">Contacto</a></li>
+                <ul class="header__nav-list nav-list--home">
+                    <li class="header__nav-list-item"><a class="header__nav-link nav-link--home" href="index.html">Inicio</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link nav-link--home" href="html/menubebidas.html">Menú</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link nav-link--home" href="html/productos.html">Productos</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link nav-link--home" href="html/nosotros.html">Nosotros</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link nav-link--home" href="html/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <!-- Svg - Contenedor del Logo -->
-            <div class="header___logo logo--header">
+            <div class="header__logo logo--header">
                 <img src="/aseets/svg/crumblylogo-postive.svg" alt="logo de crumbly">
             </div>
             <!-- Contenedor del buscador y opciones de usuario -->
@@ -56,19 +57,136 @@
                 </div>
             </section>
         </div>
+        <!-- Contenedor de Título Principal -->
+        <div class="title-primary">
+            <h1 class="title-primary__heading">
+                Disfruta de una parada saludable y encuentra ingredientes que nutren tu vida
+            </h1>
+             <!--Contenedor Button-->
+             <div class="container__button">
+                <a href="#" class="btn btn--2">Comprar ahora</a>
+            </div>
+        </div>
     </header>
     <!-------------------------------------------------------------------------------------------------------->
     <!-------------------------- Contenedor Main------------------------>
     <main class="main___container">
-         <!------------------------Tarjetas de Recetas----------------------->
+     <!-------------------------- Banner Galeria de Imagenes------------------------>
+        <section class="banner-group">
+            <!--Primer Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="aseets/imagenes/home/juice-fruit.png" alt="Jugo de frutas">
+            </div>
+            <!--Segunda Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="aseets/imagenes/home/coffee-with-friends.png" alt="Amigos compartiendo cafe helado">
+            </div>
+            <!--Tercer Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="aseets/imagenes/home/coffee-milk.png" alt="Barista preparando cafe con leche">
+            </div>
+            <!--Cuarta Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="aseets/imagenes/home/woman-somothies.png" alt="Mujer tomando Smothies">
+            </div>
+        </section>
+        <!------------------------Contenedor de Servicios----------------------->
+        <!-- Sección de Servicios -->
+        <section class="container__services">
+            <!-- Elemento de Servicio Individual -->
+            <div class="services__item">
+                <!-- Imagen del Servicio -->
+                <img class="services__image" src="/aseets/svg/services/store.svg" alt="Tienda">
+                <!-- Título del Servicio -->
+                <h3 class="services__title">Disfruta Crumbly</h3>
+                <!-- Descripción del Servicio -->
+                <p class="services__description">Descubre nuestra carta y disfruta saludablemente</p>
+            </div>
+            <!-- Elemento de Servicio Individual -->
+            <div class="services__item">
+                <img class="services__image" src="aseets/svg/services/shopping_bag.svg" alt="Ordena y retira">
+                <h3 class="services__title">Ordena y retira</h3>
+                <p class="services__description">Lleva tus alimentos frescos directamente a casa.</p>
+            </div>
+            <!-- Elemento de Servicio Individual -->
+            <div class="services__item">
+                <img class="services__image" src="aseets/svg/services/local_shipping.svg" alt="Envió Gratuito">
+                <h3 class="services__title">Envió Gratuito</h3>
+                <p class="services__description">Entrega a domicilio dentro de la Ciudad</p>
+            </div>
+            <!-- Elemento de Servicio Individual -->
+            <div class="services__item">
+                <img class="services__image" src="aseets/svg/services/featured_seasonal_and_gifts.svg" alt="Envoltorios">
+                <h3 class="services__title">Envoltorios</h3>
+                <p class="services__description">Envía una sorpresa deliciosa a tus seres queridos</p>
+            </div>
+            <!-- Elemento de Servicio Individual -->
+            <div class="services__item">
+                <img class="services__image" src="aseets/svg/services/psychiatry.svg" alt="Natural">
+                <h3 class="services__title">Natural</h3>
+                <p class="services__description">Bienestar asegurado con ingredientes orgánicos</p>
+            </div>
+        </section>
+
+        <!------------------------Contenedor de Información----------------------->
+        <section class="content__container content">
+            <!-- Contenedor de Información -->
+            <div class="content__info">
+                <!-- Contenido Primario -->
+                <div class="content__primary">
+                    <img class="content__image" src="aseets/imagenes/home/packaging02.jpg" alt="Packaging de Crumbly">
+                </div>
+                <!-- Contenido Secundario -->
+                <div class="content__secondary">
+                    <h2 class="content__title">
+                        Packaging amigable con el planeta
+                    </h2>
+                    <p class="content__text">En nuestro local, nos preocupamos por el medio ambiente y por eso hemos elegido utilizar packaging amigable con el entorno en todos nuestros productos. Nuestros envases biodegradables y materiales reciclados no solo protegen el planeta, sino que también reflejan nuestro compromiso con la sostenibilidad. Creemos que cada pequeño gesto cuenta, y estamos comprometidos en ofrecer una experiencia única y responsable a nuestros clientes, donde puedan disfrutar de nuestros productos sabiendo que están contribuyendo a un futuro más verde.</p>
+                    <!--Contenedor de Buttons-->
+                    <div class="container__button">
+                        <a href="#" class="btn btn--1">Leer más<span class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------Contenedor Grilla Nuevos Productos----------------------->
+        <section class="content__container ">
+            <div class="title-container__third">
+                <hr class="title-container__line">
+                <h2 class="title-container__title">Nuevos Productos</h2>
+                <hr class="title-container__line">
+            </div>
+            <div class="grid__container">
+                <div class="grid-container__item">
+                    <img src="../aseets/imagenes/home/blue-chocolatte.png" alt="Chocolate negro amargo, marca Blue" class="grid-container__image">
+                </div> 
+                <div class="grid-container__item">
+                    <img src="../aseets/imagenes/home/protein-gummies.png" alt="Gomitas Proteicas" class="grid-container__image">
+                </div>  
+                <div class="grid-container__item">
+                    <img src="../aseets/imagenes/home/soda-tropical.png" alt="Soda tropical sabor naranja, baja en calorias" class="grid-container__image">
+                </div>  
+                <div class="grid-container__item">
+                    <img src="../aseets/imagenes/home/packaging-cereal.jpg" alt="Granola Yellow" class="grid-container__image">
+                </div>  
+                <div class="grid-container__item">
+                    <img src="../aseets/imagenes/home/coffee-beans.png" alt="Cafe Organico" class="grid-container__image">
+                </div>  
+                <div class="grid-container__item">
+                    <img src="../aseets/imagenes/home/white-chocolate.png" alt="Chocolate Blanco" class="grid-container__image">
+                </div> 
+            </div>       
+        </section>
+
+        <!------------------------Tarjetas de Recetas----------------------->
          <section class="content__container area-container-card">
             <!---Titulo---->
-        <div class="title__container">
-            <hr>
-            <h2>¿Qué cocinar?</h2>
-            <hr>
-        </div>
-            <!------------------------------Primer Tarjeta------------------------------>
+            <div class="title-container__third">
+                <hr class="title-container__line">
+                <h2 class="title-container__title">¿Qué cocinar?</h2>
+                <hr class="title-container__line">
+            </div>
+            <!----Primer Tarjeta---->
             <div class="card-container">
                 <!--Contenedor Imagen y contenido-->
                  <!--Imagen-->
@@ -84,12 +202,13 @@
                             Cada cucharada combina yogurt griego cremoso con granola casera, rica en fibras, proteínas y antioxidantes. Perfecta para tus antojos matutinos o como refrigerio revitalizante durante el día.
                         </p>
                         <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
+                        <!--Contenedor Button-->
+                        <div class="container__button container__button--secondary">
+                            <a href="#" class="btn btn--3">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <!------------------------------Segunda Tarjeta------------------------------>
+                <!----Segunda Tarjeta---->
                 <div class="card-container__item">
                     <!--Contenedor Imagen y contenido-->
                     <!--Imagen-->
@@ -103,13 +222,13 @@
                         <p class="card-item__description">
                             Una combinación perfecta entre los arandanos y la suave harina integral, cada muffin está diseñado para complacer y alimentar tu cuerpo de manera equilibrada. Prepáralos fácilmente en casa y disfruta de una indulgencia consciente en cualquier momento del día.
                         </p>
-                        <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
+                         <!--Contenedor Button-->
+                         <div class="container__button container__button--secondary">
+                            <a href="#" class="btn btn--3">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <!------------------------------Tercer Tarjeta------------------------------>
+                <!----Tercer Tarjeta---->
                 <div class="card-container__item">
                     <!--Contenedor Imagen y contenido-->
                     <!--Imagen-->
@@ -122,13 +241,13 @@
                         <p class="card-item__description">
                             Con harina de avena integral, miel orgánica y trozos de chocolate negro, cada galleta es una deliciosa opción para satisfacer tus antojos sin comprometer tu salud. Perfectas para acompañar un café o como un regalo dulce y nutritivo para tus seres queridos.
                         </p>
-                        <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
+                        <!--Contenedor Button-->
+                        <div class="container__button container__button--secondary">
+                            <a href="#" class="btn btn--3">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <!------------------------------Cuarta Tarjeta------------------------------>
+                <!----Cuarta Tarjeta---->
                 <div class="card-container__item">
                     <!--Contenedor Imagen y contenido-->
                     <!--Imagen-->
@@ -141,13 +260,28 @@
                         <p class="card-item__description">
                             Una deliciosa opción cargada de frescura. Cada cucharada ofrece una experiencia perfecta para satisfacer tus antojos sin remordimientos. Ideal para cualquier ocasión, este helado es la elección perfecta para quienes valoran el sabor y la calidad de los ingredientes naturales.
                         </p>
-                        <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
+                        <!--Contenedor Button-->
+                        <div class="container__button container__button--secondary">
+                            <a href="#" class="btn btn--3">Ver más</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+      
+        <!------------------------Contenedor Bloque de registro----------------------->
+        <section class="content__container register">
+            <hr class="register__divider">
+            <h2 class="register__title">Únete a nuestra comunidad</h2>
+            <p class="register__text">Crumbly, tu parada saludable que enriquece tu día!</p>
+             <!--Contenedor Button-->
+            <div class="container__button register__button">
+                <a href="#" class="btn btn--4">Registrate con tu correo<span class="material-symbols-outlined register__icon">arrow_forward</span></a>
+            </div>
+        </section>
+        <!------------------------Contenedor Banner Gradiente----------------------->
+        <section class="banner-gradient">
+            <h2 class="banner-gradient__heading">¿Quieres una opción saludable y delicioso café? Crumbly ofrece lo mejor de ambos mundos.</h2>
         </section>
     </main>
     <!-------------------------------------------------------------------------------------------------------->

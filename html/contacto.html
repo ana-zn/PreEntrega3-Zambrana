@@ -20,46 +20,150 @@
     </head>
 <body>
     <!--Contenedor Header-->
-    <header class="main__header header--secondary">
+    <header class="main__header">
         <div class="header__navbar">
-           <!--Contenedor de la barra de navegación-->
-            <nav class="nav__container header__nav--home">
+            <!-- Contenedor de la barra de navegación -->
+            <nav class="nav__container">
                 <!-- Links del Menú -->
-                <ul class="header__nav-list">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../html/menubebidas.html">Menú</a></li>
-                    <li><a href="../html/productos.html">Productos</a></li>
-                    <li><a href="../html/nosotros.html">Nosotros</a></li>
-                    <li><a href="../html/contacto.html">Contacto</a></li>
+                <ul class="header__nav-list nav-list--header">
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../index.html">Inicio</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/menubebidas.html">Menú</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/productos.html">Productos</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/nosotros.html">Nosotros</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/contacto.html">Contacto</a></li>
+                    
                 </ul>
             </nav>
-            <!--Svg - Contednedor del Logo-->
-            <div class="header___logo">
-                <img src="/aseets/svg/crumblylogo.svg" alt="logo de crumbly">
+            <!-- Svg - Contenedor del Logo -->
+            <div class="header__logo">
+                <img src="../aseets/svg/crumblylogo.svg" alt="logo de crumbly">
             </div>
-             <!-- Contenedor del buscador y opciones de usuario -->
+            <!-- Contenedor del buscador y opciones de usuario -->
             <section class="header__search">
-                <!--Campo de busqueda-->
+                <!-- Campo de búsqueda -->
                 <div class="search-container">
                     <input type="text">
                 </div>
                 <!-- Contenedor del carrito de compras y perfil de usuario -->
                 <div class="header__user-items">
-                    <!--Icono del perfil de usuario-->
+                    <!-- Icono del perfil de usuario -->
                     <div class="header__user-icon">
-                    <a href="#"><span class="material-symbols-outlined home">person</span></a>
+                        <a href="#"><span class="material-symbols-outlined">person</span></a>
                     </div>
-                    <!--Icono del carrito de compras-->
+                    <!-- Icono del carrito de compras -->
                     <div class="header__user-icon">
-                    <a href="#"> <span class="material-symbols-outlined home">shopping_basket</span></a>  
+                        <a href="#"><span class="material-symbols-outlined">shopping_basket</span></a>
                     </div>
-                </div>
                 </div>
             </section>
         </div>
     </header>
+     <!-------------------------------------------------------------------------------------------------------->
     <!--Contenedor Main-->
     <main class="main___container">
+        <!------------------------Contenedor de Formulario----------------------->
+        <section class="content__container contact-container">
+            <div class="contact-container__form">
+                <div class="form__input-group">
+                    <label class="form__label">Tipo de Consulta
+                        <select class="form__select" name="type-consultation">
+                            <option class="form__option" value="value1">Horario de Comercio</option>
+                            <option class="form__option" value="value2">Servicios</option>
+                            <option class="form__option" value="value3">Productos Naturales</option>
+                            <option class="form__option" value="value4">Menú</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form__input-group">
+                    <label class="form__label" for="nombre">Nombre y Apellido</label>
+                    <input class="form__input" type="text" id="nombre" placeholder="Mariana Martinez">
+                </div>
+                <div class="form__input-group">
+                    <label class="form__label" for="email">Correo Electrónico</label>
+                    <input class="form__input" type="email" id="email" placeholder="mariananamartinez@gmail.com">
+                </div>
+                <div class="form__input-group">
+                    <label class="form__label">Seleccione su Región
+                        <select class="form__select" name="region">
+                            <option class="form__option" value="value1">Zona Sur</option>
+                            <option class="form__option" value="value2">Zona Este</option>
+                            <option class="form__option" value="value3">Valle de Uco</option>
+                            <option class="form__option" value="value4">Región Metropolitana</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form__input-group">
+                    <label class="form__label" for="coment">Deja tu Comentario</label>
+                    <textarea class="form__textarea" id="coment" placeholder="Hola me gustaría saber por productos..."></textarea>
+                </div>
+            </div>
+            <div class="contact-container__secondary">
+                <div class="map-container">
+                    <iframe class="map-container__iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6313.845472161691!2d-68.34640992179034!3d-34.61089453202917!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1721994954977!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="social">
+                    <ul class="social__items">
+                        <li class="social__item"><a class="social__link" href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#"><i class='bx bxl-twitter'></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#"><i class='bx bxl-facebook'></i></a></li>
+                        <li class="social__item"><a class="social__link" href="#"><i class='bx bxl-youtube'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <!------------------------Contenedor Banner Gradiente----------------------->
+        <section class="banner-gradient">
+            <h2 class="banner-gradient__heading">¿Quieres una opción saludable y delicioso café? Crumbly ofrece lo mejor de ambos mundos.</h2>
+        </section>
+    <!------------------------Contenedor Preguntas Frecuentes----------------------->
+        <section class="content__container contact-container">
+            <div class="faq-container">
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Cómo puedo hacer un pedido?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus productos favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Cómo puedo hacer un pedido?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus productos favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+            </div>
+            <div class="faq-container">
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+                <details class="faq-container__item">
+                    <summary class="faq-container__summary">¿Ofrecen opciones personalizadas o por encargo?</summary>
+                    <p class="faq-container__content">Puedes hacer un pedido a través de nuestro sitio web en la sección "Tienda". Simplemente selecciona tus cookies favoritas, añade al carrito y sigue las instrucciones para finalizar tu compra.</p>
+                </details>
+            </div>
+        </section>
+        
         
     </main>
     <!-------------------------------------------------------------------------------------------------------->
@@ -103,7 +207,7 @@
             <div class="footer__social">
                 <!-- Logo del Footer -->
                 <div class="footer__logo">
-                    <img src="aseets/svg/crumblylogo.svg" alt="Logo de Crumbly">
+                    <img src="../aseets/svg/crumblylogo.svg" alt="Logo de Crumbly">
                 </div>
                 <!-- Iconos de Redes Sociales -->
                 <div class="footer__social-items">

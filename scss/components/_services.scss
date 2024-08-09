@@ -1,0 +1,32 @@
+.container__services{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    gap: 16px;
+    /* Elemento de Servicio Individual */
+    .services__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px; 
+        width: 100%;
+    }
+
+    /* Imagen del Servicio */
+    .services__image {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Título del Servicio */
+    .services__title {
+        text-transform: uppercase;
+    }
+
+    /* Descripción del Servicio */
+    .services__description {
+        color: $gray-dark;
+    }
+}

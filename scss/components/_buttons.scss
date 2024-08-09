@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: start; 
     gap:32px; 
-    padding-top: 32px;
     .btn{
         display: inline-flex; 
         width: auto;
@@ -13,10 +12,47 @@
         box-sizing: border-box;
         padding: 8px 16px; 
         background-color: transparent;
-        border: 2px solid $primarycolor; 
         border-radius: 50px;
         font-size: $font-size-l;
         cursor: pointer; 
         text-align: center;
+        border: 2px solid $primarycolor;
     }
+    .btn--1{
+        border: 2px solid $primarycolor; 
+    }
+    
+    .btn--2{
+        color: $secondarycolor;
+        border: 2px solid $secondarycolor;
+        &:hover{
+            background-color: $secondarycolor;
+            color: $primarycolor; 
+        }
+    }
+    //Card
+    .btn--3{
+        @extend .btn--1; 
+        font-size:$font-size-m; 
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    //Register buton
+    .btn--4{
+        @extend .btn; 
+        display: flex; 
+        justify-content: center;
+        width: 90%;
+        padding: 16px 24px;
+        gap:16px; 
+        font-size: $font-size-l;
+        letter-spacing: -1px;
+        font-weight: 600; 
+        text-transform: uppercase;
+    }
+   
+//Otro Contenedor 
+}
+.container__button--secondary{
+    padding-top: 16px;
 }

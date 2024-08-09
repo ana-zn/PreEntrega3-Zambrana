@@ -19,44 +19,45 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0">
     </head>
     <body>
-        <!-- Contenedor Header -->
-        <header class="main__header header--secondary">
-            <div class="header__navbar">
-                <!-- Contenedor de la barra de navegación -->
-                <nav class="nav__container header__nav--home">
-                    <!-- Links del Menú -->
-                    <ul class="header__nav-list">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../html/menubebidas.html">Menú</a></li>
-                        <li><a href="../html/productos.html">Productos</a></li>
-                        <li><a href="../html/nosotros.html">Nosotros</a></li>
-                        <li><a href="../html/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <!-- Svg - Contenedor del Logo -->
-                <div class="header___logo">
-                    <img src="../aseets/svg/crumblylogo.svg" alt="logo de crumbly">
-                </div>
-                <!-- Contenedor del buscador y opciones de usuario -->
-                <section class="header__search">
-                    <!-- Campo de búsqueda -->
-                    <div class="search-container">
-                        <input type="text">
-                    </div>
-                    <!-- Contenedor del carrito de compras y perfil de usuario -->
-                    <div class="header__user-items">
-                        <!-- Icono del perfil de usuario -->
-                        <div class="header__user-icon">
-                            <a href="#"><span class="material-symbols-outlined home">person</span></a>
-                        </div>
-                        <!-- Icono del carrito de compras -->
-                        <div class="header__user-icon">
-                            <a href="#"><span class="material-symbols-outlined home">shopping_basket</span></a>
-                        </div>
-                    </div>
-                </section>
+    <!--Contenedor Header-->
+    <header class="main__header">
+        <div class="header__navbar">
+            <!-- Contenedor de la barra de navegación -->
+            <nav class="nav__container">
+                <!-- Links del Menú -->
+                <ul class="header__nav-list nav-list--header">
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../index.html">Inicio</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/menubebidas.html">Menú</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/productos.html">Productos</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/nosotros.html">Nosotros</a></li>
+                    <li class="header__nav-list-item"><a class="header__nav-link" href="../html/contacto.html">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+            <!-- Svg - Contenedor del Logo -->
+            <div class="header__logo">
+                <img src="../aseets/svg/crumblylogo.svg" alt="logo de crumbly">
             </div>
-        </header>
+            <!-- Contenedor del buscador y opciones de usuario -->
+            <section class="header__search">
+                <!-- Campo de búsqueda -->
+                <div class="search-container">
+                    <input type="text">
+                </div>
+                <!-- Contenedor del carrito de compras y perfil de usuario -->
+                <div class="header__user-items">
+                    <!-- Icono del perfil de usuario -->
+                    <div class="header__user-icon">
+                        <a href="#"><span class="material-symbols-outlined">person</span></a>
+                    </div>
+                    <!-- Icono del carrito de compras -->
+                    <div class="header__user-icon">
+                        <a href="#"><span class="material-symbols-outlined">shopping_basket</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
         <!-------------------------------------------------------------------------------------------------------->
          <!-- Contenedor Main-->
         <main class="main___container">
@@ -141,9 +142,96 @@
                     </div>
                 </div>
             </section>
-        <!----------------------------Inicio Seccion---------------------------->
-            
+        <!------------------------Contenedor Bloque de registro----------------------->
+        <section class="content__container register">
+            <hr class="register__divider">
+            <h2 class="register__title">Únete a nuestra comunidad</h2>
+            <p class="register__text">Crumbly, tu parada saludable que enriquece tu día!</p>
+             <!--Contenedor Button-->
+            <div class="container__button register__button">
+                <a href="#" class="btn btn--4">Registrate con tu correo<span class="material-symbols-outlined register__icon">arrow_forward</span></a>
+            </div>
+        </section>
+        <!-------------------------- Banner Galeria de Imagenes------------------------>
+        <section class="banner-group">
+            <!--Primer Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="../aseets/imagenes/aboutus/high-angle-two-coffee-machine-cups.jpg" alt="Barista preparando cafe">
+            </div>
+            <!--Segunda Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="aseets/imagenes/home/coffee-with-friends.png" alt="Amigos compartiendo cafe helado">
+            </div>
+            <!--Tercer Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="../aseets/imagenes/aboutus/high-angle-two-coffee-machine-cups.jpg" alt="Barista preparando cafe con leche">
+            </div>
+            <!--Cuarta Imagen-->
+            <div class="banner-group__item">
+                <img class="banner-group__image" src="aseets/imagenes/home/woman-somothies.png" alt="Mujer tomando Smothies">
+            </div>
+        </section>
+
         </main>
+        <!-------------------------------------------------------------------------------------------------------->
+        <!-------------------------- Contenedor Footer------------------------>
+        <footer class="footer">
+            <!-- Sección Primaria del Footer -->
+            <div class="footer__primary">
+                <!-- Enlaces del Footer -->
+                <div class="footer__links">
+                    <!-- Enlaces de la Cuenta -->
+                    <div class="footer__link-item">
+                        <h3 class="footer__title">Cuenta</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a class="footer__link" href="#">Inicio de sesión</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">Registrarse</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">Mis pedidos</a></li>
+                        </ul>
+                    </div>
+                    <!-- Enlaces de Nuestra Tienda -->
+                    <div class="footer__link-item">
+                        <h3 class="footer__title">Nuestra tienda</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a class="footer__link" href="#">Productos</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">Ofertas</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">Novedades</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">¿Por qué Crumbly?</a></li>
+                        </ul>
+                    </div>
+                    <!-- Enlaces de Recursos -->
+                    <div class="footer__link-item">
+                        <h3 class="footer__title">Recursos</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a class="footer__link" href="#">Preguntas frecuentes</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">Recetario</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">Términos y Condiciones</a></li>
+                            <li class="footer__list-item"><a class="footer__link" href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Redes Sociales del Footer -->
+                <div class="footer__social">
+                    <!-- Logo del Footer -->
+                    <div class="footer__logo">
+                        <img src="../aseets/svg/crumblylogo.svg" alt="Logo de Crumbly">
+                    </div>
+                    <!-- Iconos de Redes Sociales -->
+                    <div class="footer__social-items">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-list-item"><a class="footer__social-link" href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+                            <li class="footer__social-list-item"><a class="footer__social-link" href="#"><i class='bx bxl-twitter'></i></a></li>
+                            <li class="footer__social-list-item"><a class="footer__social-link" href="#"><i class='bx bxl-facebook'></i></a></li>
+                            <li class="footer__social-list-item"><a class="footer__social-link" href="#"><i class='bx bxl-youtube'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Sección Secundaria del Footer -->
+            <div class="footer__secondary">
+                <p>©2024 | Crumbly</p>
+            </div>
+    </footer>
     </body>
 </html>
 
