@@ -5,6 +5,7 @@
 //Carpeta Layout
 @import "layout/header"; 
 @import "layout/main"; 
+@import "layout/menu"; 
 @import "layout/register"; 
 @import "layout/section-title";
 @import "layout/grid"; 
@@ -20,4 +21,5 @@
 @import "components/services"; 
 @import "components/container-info"; 
 @import "components/forms"; 
-@import "components/faq-container"
+@import "components/container-products";
+@import "components/faq-container"; 

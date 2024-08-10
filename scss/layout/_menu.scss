@@ -1,0 +1,83 @@
+.wrapper{
+    display: flex;
+    .product-list{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        gap: 32px;
+        .product-list__item{
+           .product-list__title{
+            font-size: $font-size-xl;
+            text-transform: uppercase;
+           }
+           .product-list__subtitle{
+            font-size: $font-size-l;
+            padding-top: 8px;
+           }
+           .product-list__list{
+            list-style: none;
+            padding: 4px 16px;
+            .product-list__list-item{
+                color: $gray-dark;
+                padding: 2px 0px;
+            }
+           }
+        }
+    }
+    /**/
+    .menu-categories{
+        width:100% ;
+        gap: 24px; 
+        .menu-categories__search{
+
+        }
+        .category__list{
+            background-color: $gray-light; 
+            padding: 32px;
+            margin: 32px 0;
+            border-radius: 32px;
+            display: grid;
+            grid-template-columns:repeat(3,1fr); 
+            gap:16px; 
+            .category__item{
+                display: flex;
+                flex-direction: column;
+                gap:16px; 
+                border-radius: 16px;
+                align-items: center;
+                background-color: $secondarycolor;
+                padding: 32px; 
+                .category__image{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    width: 168px;
+                    height: 168px;
+                    border-radius: 100px;
+                    padding: 24px;
+                    background-color: $third-color;  
+                }
+                .category__details{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap:8px; 
+                    width: 100%;
+                    .category__details-title{
+                        font-size: $font-size-l;
+                    }
+                    .category__details-price{
+                        font-weight: 600;
+                    }
+                }
+                .category__description{ //p
+                    color:$gray-dark; 
+                    font-size:$font-size-s; 
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+}
