@@ -1,7 +1,7 @@
 .container__services{
     display: flex;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 144px;
     gap: 16px;
     /* Elemento de Servicio Individual */
     .services__item {
@@ -15,7 +15,7 @@
 
     /* Imagen del Servicio */
     .services__image {
-        width: 100px;
+        width: 80px;
         height: auto;
         margin-bottom: 20px;
     }

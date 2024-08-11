@@ -1,5 +1,5 @@
 @import "../utilities/variables"; 
-/*Contenedor Header*/
+/*Contenedor*/
 .banner__container{
     display: inline; 
     width: 100%;
@@ -29,7 +29,7 @@
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
-  height: 464px;
+  height: 384px;
   justify-content: space-between;
   .banner-group__item{
     flex: 1;
@@ -47,7 +47,7 @@
 .banner-gradient{
     height: auto;
     text-align: left;
-    padding: 80px ;
+    padding: 80px 144px;
     background: rgb(255,235,128);
     background: linear-gradient(90deg, rgba(255,235,128,1) 0%, rgba(247,183,144,1) 66%, rgba(242,153,153,1) 100%);
     .banner-gradient__heading{
@@ -57,4 +57,50 @@
       line-height: 90%;
       padding: 32px 0;
     }
+}
+
+// Banner Valoraciones
+.rating__content{
+  background-color: $primarycolor;
+  display: flex;
+  flex-direction: row;
+  padding: 32px 80px; 
+  gap: 24px; 
+  .item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    .item__image{
+      img{
+        border: 3px solid $gray-light; 
+        border-radius: 100px;
+      }
+    }
+    .item__rating-stars{
+      display: flex; 
+      justify-content: center;
+      gap: 16px;
+      padding: 8px;
+      .bx{
+        color: $gray-light;
+        font-size: $font-size-l;
+      }
+    }
+   
+    .item__content{
+      margin-top: 16px;
+      .item__title{
+        font-size: $font-size-m;
+        color:$gray-light;
+      }
+      .item__text{
+        margin-top: 8px;
+        font-size: $font-size-s;
+        color:$gray-light;
+        text-wrap: balance;
+      }
+    }
+  }
+  
 }

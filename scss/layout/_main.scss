@@ -1,13 +1,15 @@
 //Estilos del contenedor main
+
 .main___container{
     display: flex;
     flex-direction: column;
     gap: 56px;
+    background-color: $grey-background;
 }
 
-//Estilo estandar de contenedores
+/*Estilo estandar de contenedores*/
 .content__container{
-    padding: 0 80px;
+    padding: 0 144px;
     display: flex;
     flex-direction: column;
     gap:32px; 
