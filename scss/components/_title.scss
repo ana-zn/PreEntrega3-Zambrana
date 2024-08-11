@@ -5,7 +5,7 @@
     margin-top:156px; 
     gap: 40px;
     .title-primary__heading{
-        font-size: $font-size-xxl; 
+        font-size: $font-size-xxxl; 
         font-family: $secondary-font; 
         color: $secondarycolor; 
         width: 90%;
@@ -13,6 +13,14 @@
         text-align: right;
     }
 }
+
+//
+.title__container{
+    .title__text{
+        font-size: $font-size-xxl; 
+    }
+}
+
 .title-container__secondary{
     h2{
         font-size: $font-size-xxl; 

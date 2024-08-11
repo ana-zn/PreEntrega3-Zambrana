@@ -32,8 +32,6 @@
 
         }
         .category__list{
-            background-color: $gray-light; 
-            padding: 32px;
             margin: 32px 0;
             border-radius: 32px;
             display: grid;
@@ -42,41 +40,54 @@
             .category__item{
                 display: flex;
                 flex-direction: column;
+                justify-content:space-between; 
                 gap:16px; 
                 border-radius: 16px;
+                background-color: $secondarycolor; 
                 align-items: center;
-                background-color: $secondarycolor;
-                padding: 32px; 
+                padding: 24px; 
                 .category__image{
                     display: flex;
                     align-items: center;
                     justify-content: center;  
                     overflow: hidden;
                     box-sizing: border-box;
-                    width: 168px;
-                    height: 168px;
-                    border-radius: 100px;
-                    padding: 24px;
-                    background-color: $third-color;  
+                    height: 180px;
+                    width: 180px;
+                    img{
+                        height:100%; 
+                        width: 100%;
+                        object-fit: contain;   
+                    }
                 }
                 .category__details{
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
-                    gap:8px; 
-                    width: 100%;
-                    .category__details-title{
-                        font-size: $font-size-l;
+                    flex-direction: column;
+                    gap: 16px;
+                    .catagory__detailes-group{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        gap:8px; 
+                        width: 100%;
+                        .category__details-title{
+                            font-size: $font-size-m;
+                        }
+                        .category__details-price{
+                            font-size: $font-size-m;
+                            font-weight: 600;
+                        }
                     }
-                    .category__details-price{
-                        font-weight: 600;
+                    .category__description{ //p
+                        color:$gray-dark; 
+                        font-size:$font-size-m; 
+                        line-height: 120%;
+                        min-height: 96px;
                     }
+
                 }
-                .category__description{ //p
-                    color:$gray-dark; 
-                    font-size:$font-size-s; 
-                    line-height: 120%;
-                }
+                
             }
         }
     }
