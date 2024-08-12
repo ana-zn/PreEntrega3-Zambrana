@@ -5,9 +5,10 @@
     margin-top:156px; 
     gap: 40px;
     .title-primary__heading{
-        font-size: $font-size-xxxl; 
+        font-size:$font-size-xxxxl-plus; 
         font-family: $secondary-font; 
         color: $secondarycolor; 
+        line-height: $line-height-extra-large; 
         width: 90%;
         font-weight: 400;
         text-align: right;
@@ -17,13 +18,13 @@
 //
 .title__container{
     .title__text{
-        font-size: $font-size-xxl; 
+        font-size: $font-size-xxxl; 
     }
 }
 
 .title-container__secondary{
     h2{
-        font-size: $font-size-xxl; 
+        font-size: $font-size-xxxl; 
         text-align: center; 
     }
 
@@ -36,7 +37,7 @@
     align-items: center;
     width: 100%;
     .title-container__title{
-        font-size: $font-size-xxl; 
+        font-size: $font-size-xxl-plus; 
         text-transform: uppercase;
         text-align: center;
         white-space: nowrap;

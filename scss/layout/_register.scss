@@ -4,7 +4,7 @@
     overflow: hidden;
     box-sizing: border-box;
     align-items: center;
-    gap:24px; 
+    gap:16px; 
     width: 100%;
     /*padding: 56px 80px;*/
     .register__divider{
@@ -14,17 +14,15 @@
         background-color:$primarycolor; 
     }
     .register__title{
-        font-size: $font-size-xxl;
+        font-size:$font-size-xxl-plus; 
         text-transform: uppercase;
     }
     .register__text{
-        font-size: $font-size-l; 
+        font-size:$font-size-xl; 
     }
     .register__button{
         display: flex;
         align-items: center;
         width: 90%;
-        
-       
     }
 }

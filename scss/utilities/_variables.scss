@@ -22,6 +22,18 @@ $secondary-font:"Orelega One", serif;
 
 /*Tamaño de fuentes*/
 /*Font Size*/
+$font-size-xxxxl-plus: 5rem;
+$font-size-xxxxl: 4.5rem;  // Tamaño extremadamente grande
+$font-size-xxxl-plus: 4rem; // Entre XXXL y XXXXL
+$font-size-xxxl: 3.5rem;   // Tamaño muy grande
+$font-size-xxl-plus: 3rem;  // Entre XXL y XXXL
+$font-size-xxl: 2rem;    // Tamaño extra grande
+$font-size-xl: 1.5rem;   // Tamaño medio-grande
+$font-size-l: 1.25rem;   // Tamaño medio
+$font-size-m: 1rem;      // Tamaño normal (párrafos, links)
+$font-size-s: 0.875rem;  // Tamaño pequeño
+$font-size-xs: 0.75rem;
+/*
 $font-size-xxxl: 4rem; //h1(Desktop)
 $font-size-xxl: 3rem; //h2 (Desktop)
 $font-size-xl: 1.5rem;
@@ -29,3 +41,18 @@ $font-size-l: 1.25rem;
 $font-size-m: 1rem; //Parrafos, link (Desktop)
 $font-size-s: 0.875rem; 
 $font-size-xs: 0.5rem; 
+*/
+
+
+// Variables de interlineado
+
+$line-height-default: 120%;
+$line-height-extra-large: 110%;
+$line-height-large: 100%;
+$line-height-medium: 90%;
+
+/*Variable Border*/
+$border-primary: 2px solid #25282A;
+$border-secondary: 2px solid #fff;
+
+

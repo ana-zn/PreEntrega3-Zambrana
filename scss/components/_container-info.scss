@@ -27,8 +27,8 @@
             padding-top: 32px;
             .content__title{
                 font-family: $secondary-font;
-                font-size: $font-size-xxl;
-                line-height: 70%;
+                line-height:$line-height-medium;
+                font-size: $font-size-xxxl; 
                 font-weight: 400;
             }
             .content__text{

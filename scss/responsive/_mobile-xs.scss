@@ -1,0 +1,92 @@
+@media (max-width: 360px){
+    .header--home{
+        height: 500px;
+        margin-bottom: 40px;
+    }
+    
+    //Font Size 
+    .title-primary{
+        margin-top: 120px;
+       .title-primary{
+        .title-primary__heading{
+            font-size:$font-size-xxl; 
+        }
+    }
+    }
+    //Titulo Contenedor MENU
+    .title__container{
+        .title__text{
+            margin-top: 32px;
+            font-size: $font-size-xxl;
+        }
+
+    } 
+    //Botones
+    .menu-categories{
+        .menu-categories__buttons{
+            padding: 8px 0px;
+            .menu-categories__list{
+                gap:4px; 
+                .menu-categories__list-item{
+                    padding: 4px 0;
+                    .menu-categories__link{
+                        font-size: $font-size-s;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    //Banners
+    .banner-group{
+        height: 160px;
+    }
+     
+    //Grilla
+     .grid__container{
+        grid-template-columns: repeat(2, 1fr); 
+        .grid-container__item{
+            height: 160px;
+        }
+    }
+    //Contenedor de RECETAS
+    .area-container-card {
+        .card-container{
+            display:flex; 
+            flex-direction: column;
+            .card-item__image{
+                height: 160px;
+            }
+        } 
+       
+    }
+    //Contenedor MENU
+    .wrapper{
+        .product-list{
+           display: none;
+        }
+        .category{
+            .category__list{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                .category__item{
+                    padding: 16px;
+                    .category__description{
+                        height: 80px;
+                    }
+                }
+            }
+        }
+
+    }
+    //Info NOSOTROS
+    .info__container{
+        flex-direction: column;
+       .item__container{
+        max-width: 100%;
+    }
+    }
+  
+}
+

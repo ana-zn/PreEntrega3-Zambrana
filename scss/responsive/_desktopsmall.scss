@@ -1,0 +1,34 @@
+@media (max-width: 1240px) {
+    //Padding de contenedores
+    .main__header,
+    .container__services,
+    .content__container,
+    .banner-gradient,
+    .footer__primary {
+      padding: 0 120px;
+    }
+  
+    .banner-gradient {
+      padding-top: 52px;
+    }
+  
+    .footer__primary {
+      padding-top: 48px;
+      margin-bottom: 72px;
+    }
+     //header
+     .header--home{
+      height: 744px;
+  }
+
+  //Contenedor de recetas
+  .area-container-card {
+    .card-container{
+        .card-item__image{
+            height: 160px;
+        }
+    } 
+   
+}
+}
+  

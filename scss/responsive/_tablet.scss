@@ -1,0 +1,228 @@
+@import "../utilities/variables";
+@media (max-width: 906px) {
+    //Padding de contenedores
+    .main__header,
+    .container__services,
+    .content__container,
+    .banner-gradient,
+    .footer__primary {
+      padding: 0 96px;
+    }
+  
+    .banner-gradient {
+      padding: 52px 96px;
+    }
+    .footer{
+        .footer__primary {
+            padding: 0 96px; 
+            margin-bottom: 32px;
+            flex-direction: column;
+            align-items: center;
+            .footer__links{
+                width: 100%;
+            }
+            .footer__social{
+                gap:16px; 
+                margin-top: 32px;
+                .footer__social-items{
+                    .footer__social-list{
+                        gap:32px; 
+                    }
+                }
+            }
+        }
+    }
+    
+    //gap
+    .main___container{
+        gap:40px; 
+    }
+    //Font size
+    .title-primary{
+        .title-primary__heading{
+            font-size:$font-size-xxxl; 
+        }
+    }
+
+    //header
+    .main__header{
+        .header__navbar{
+            justify-content: space-between;
+            .menu-responsive{
+                display: flex;
+                flex-grow: 1;
+                order: 3;
+            }
+            .nav__container{
+                display: none;
+            }
+            .header__logo{
+                justify-content: flex-start;
+                flex-grow: 1;
+            }
+            .header__search{
+                width: 100%;
+                flex-grow: 1;
+            }
+        }
+    }
+    
+    .header--home{
+        height: 680px;
+        .nav-bar--home{
+            .header__nav--home{
+                .nav-list--home{
+                    display: none;
+                }
+                
+            }
+        }
+    }
+    
+    //BANNERS
+    .banner-group{
+        height: 320px;
+    }
+    .rating__content{
+        display: flex;
+        overflow-x: auto;
+        padding-left: 80px;
+        gap: 32px;
+        &::-webkit-scrollbar {
+            height: 8px;
+            padding-left: 60px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .item{
+            min-width: 200px;
+            .item__content{
+                .item__text{
+                    display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 3; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-height: calc(1.5em * 3);
+                }
+            }
+        }
+    }
+    //Contenedor Register
+    .register{
+        .register__title{
+            text-align: center;
+        }
+    }
+    //SERVICES - Home
+    .container__services{
+        display: flex;
+        overflow-x: auto;
+        padding-left: 80px;
+        gap: 24px;
+        &::-webkit-scrollbar {
+            height: 8px;
+            padding-left: 60px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .services__item{
+            min-width: 172px;
+            margin-bottom: 8px;
+            .services__image{
+                margin-bottom: 12px;
+                width: 60px;
+            }
+            .services__title,.services__description{
+                font-size: $font-size-m;
+                width: 100%;
+            }
+        }
+        
+    }
+    //Contenedor Info
+    .content{
+        .content__info{
+            gap: 16px;
+            .content__primary{
+                .content__image{
+                    height: 100%;
+
+                }
+            }
+            .content__secondary{
+                gap:16px; 
+                padding-top: 16px;
+            }
+        }
+    }
+    //
+    .area-container-card {
+        .card-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:32px; 
+        } 
+       
+    }
+    //GRILLA 
+    .grid__container{
+        .grid-container__item{
+            height: 256px;
+        }
+    }
+    //Contenedor Menu
+    .wrapper{
+        .product-list{
+            gap:24px; 
+            width: 35%; 
+            .product-list__list{
+                padding: 4px, 8px;
+            }
+        }
+        .category{
+            .category__list{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                .category__item{
+                    padding: 16px;
+                    .category__description{
+                        height: 80px;
+                    }
+                }
+            }
+        }
+
+    }
+    //
+   .wrap__container{
+    flex-direction: column;
+   }
+   //"Sobre Nosotros"
+   .content__container{
+    .title__container{
+        .title__text{
+            margin-left: 40px;
+        }
+    }
+   }
+   //Contenedor Contacto 
+   .contact-container{
+    flex-direction: column;
+    gap:0px; 
+    .contact-container__form{
+        margin-bottom: 24px;
+    }
+    .faq-container{
+        width: 100%;
+    }
+   }
+   
+  }
+  

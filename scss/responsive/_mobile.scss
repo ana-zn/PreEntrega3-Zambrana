@@ -1,0 +1,153 @@
+@media (max-width: 600px){
+    //Padding de contenedores
+    .main__header,
+    .container__services,
+    .content__container,
+    .banner-gradient,
+    .footer__primary {
+      padding: 0 16px;//
+    }
+  
+    .banner-gradient {
+      padding: 24px 16px;
+      .banner-gradient__heading{
+        font-size: $font-size-xxl; 
+      }
+    }
+     //Header
+     .header--home{
+        height: 600px;
+        margin-bottom: 40px;
+    }
+    
+    //Footer
+    .footer{
+        .footer__primary {
+            padding: 0 16px; 
+            margin-bottom: 32px;
+            flex-direction: column;
+            align-items: center;
+            .footer__links{
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                gap:24px; 
+                .footer__link-item{
+                    .footer__title{
+                        margin-bottom: 16px;
+                    }
+                    .footer__list{
+                        .footer__list-item{
+                            margin:4px; 
+                        }
+                    }
+                    
+                }
+                
+            }
+            .footer__social{
+                gap:16px; 
+                margin-top: 32px;
+                .footer__social-items{
+                    .footer__social-list{
+                        gap:32px; 
+                    }
+                }
+            }
+        }
+        .footer__secondary{
+            padding: 16px 0 ;
+        }
+    }
+    
+    //gap
+    .main___container{
+        gap:40px; 
+    }
+    //Font size
+    .title-primary{
+        .title-primary__heading{
+            font-size:2rem; 
+        }
+    }
+
+   
+    //BANNERS
+    .banner-group{
+        height: 320px;
+    }
+   
+    .register{
+        .register__title{
+            text-align: center;
+        }
+    }
+    //Valoraciones de Usuarios
+    .rating__content{
+        padding-left: 16px;
+        .item{
+            .item__raiting-starts{
+                padding: 4px;
+            }
+            .item-content{
+                margin-top: 8px;
+            }
+        }
+    }
+    //SERVICES - Home
+    .container__services{
+        flex-direction: column;
+        .services__item{
+            min-width: 172px;
+            margin-bottom: 8px;
+            .services__image{
+                margin-bottom: 12px;
+                width: 40px;
+            }
+            .services__title,.services__description{
+                font-size: $font-size-s;
+                width: 100%;
+            }
+        }
+        
+    }
+    //Contenedor Info
+    .content{
+        .content__info{
+            gap: 16px;
+            flex-direction: column;
+
+            .content__primary{
+                max-width: 100%;
+                .content__image{
+                    height: 100%;
+
+                }
+            }
+            .content__secondary{
+                gap:16px; 
+                padding-top: 16px;
+                max-width: 100%;
+            }
+        }
+    }
+    //
+    .area-container-card {
+        .card-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:16px; 
+        } 
+       
+    }
+    //GRILLA 
+    .grid__container{
+        grid-template-columns: repeat(2, 1fr); 
+        .grid-container__item{
+            height: 256px;
+        }
+    }
+  
+   
+  }
+  
