@@ -53,16 +53,17 @@
 }
 //
 .menu-categories__buttons{
-    padding: 24px 0;  
+
     .menu-categories__list{
         display: flex;
         flex-direction: row;
         gap: 8px;
+        margin-bottom: 16px;
         .menu-categories__list-item{
             width: 100%;
             text-align: center;
             list-style: none;
-            border: 2px solid $primarycolor; 
+            border:$border-primary; 
             border-radius: 100px;
             padding: 8px 0;
             .menu-categories__link{

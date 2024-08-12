@@ -42,7 +42,8 @@
                 <section class="header__search">
                     <!-- Campo de búsqueda -->
                     <div class="search-container">
-                        <input type="text">
+                        <i class='bx bx-search'></i>
+                        <input type="text" class="search-bar__input" placeholder="Buscar...">
                     </div>
                     <!-- Contenedor del carrito de compras y perfil de usuario -->
                     <div class="header__user-items">
@@ -60,24 +61,25 @@
         </header>
     <!------- Contenedor Main------->
     <main class="main___container">
-        <!--Banner Autoplay -->
-        <section class="banner__container banner--autoplay">
-            <h2 class="text">Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF</h2>
-            <h2 class="text">Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF</h2>
-        </section>
-        <!-- Contenedor Nuevos Productos-->
+        <section class="products">
+              <!--Banner Autoplay -->
+            <section class="banner__container banner--autoplay">
+                <h2 class="text">Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF</h2>
+                <h2 class="text">Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF-Recomendados+15%OFF</h2>
+            </section>
+              <!-- Contenedor Nuevos Productos-->
         <section class="new-products">
             <!--Item 1-->
             <div class="new-products__item">
                 <div class="new-products__item-img">
-                    <img src="../aseets/imagenes/productos/mudra-granola.jpeg" alt="">
+                    <img src="../aseets/imagenes/home/blue-chocolatte.png" alt="Chcocolate">
                 </div>
                 <div class="new-products__item-details">
                     <div class="new-products__item-price">
-                        <h4 class="new-products__item-title">Title Product</h4>
-                        <span class="new-products__item-amount">$1200</span>
+                        <h4 class="new-products__item-title">Chocolate Amargo</h4>
+                        <span class="new-products__item-amount">$2400</span>
                     </div>
-                    <span class="new-products__item-price-through">$1200</span>
+                    <span class="new-products__item-price-through">$3000</span>
                     <p class="new-products__item-description">
                         Lorem ipsum dolor sit amet cons. Bibendum sapien enim dol faucibus amet. Lorem ipsum dolor sit amet 
                     </p>
@@ -91,11 +93,32 @@
              <!--Item 2-->
              <div class="new-products__item">
                 <div class="new-products__item-img">
-                    <img src="../aseets/imagenes/productos/mudra-granola.jpeg" alt="">
+                    <img src="../aseets/imagenes/home/protein-gummies.png" alt="Gomitas Proteicas">
                 </div>
                 <div class="new-products__item-details">
                     <div class="new-products__item-price">
-                        <h4 class="new-products__item-title">Title Product</h4>
+                        <h4 class="new-products__item-title">Gomitas Proteicas</h4>
+                        <span class="new-products__item-amount">$1500</span>
+                    </div>
+                    <span class="new-products__item-price-through">$1900</span>
+                    <p class="new-products__item-description">
+                        Lorem ipsum dolor sit amet cons. Bibendum sapien enim dol faucibus amet. Lorem ipsum dolor sit amet 
+                    </p>
+                    <div class="new-products__item-buttons">
+                        <button class="new-products__button new-products__button--increment">+</button>
+                        <button class="new-products__button new-products__button--count">1</button>
+                        <button class="new-products__button new-products__button--decrement">-</button>
+                    </div>
+                </div>
+            </div>
+             <!--Item 1-->
+             <div class="new-products__item">
+                <div class="new-products__item-img">
+                    <img src="../aseets/imagenes/home/packaging-cereal.jpg" alt="Hojuelas de Cereales ">
+                </div>
+                <div class="new-products__item-details">
+                    <div class="new-products__item-price">
+                        <h4 class="new-products__item-title">Granola Mix Tropical</h4>
                         <span class="new-products__item-amount">$1200</span>
                     </div>
                     <span class="new-products__item-price-through">$1200</span>
@@ -112,11 +135,11 @@
              <!--Item 1-->
              <div class="new-products__item">
                 <div class="new-products__item-img">
-                    <img src="../aseets/imagenes/productos/mudra-granola.jpeg" alt="">
+                    <img src="../aseets/imagenes/home/white-chocolate.png" alt="Chcocolate Blanco bajo en grasas">
                 </div>
                 <div class="new-products__item-details">
                     <div class="new-products__item-price">
-                        <h4 class="new-products__item-title">Title Product</h4>
+                        <h4 class="new-products__item-title">Chocolate blanco</h4>
                         <span class="new-products__item-amount">$1200</span>
                     </div>
                     <span class="new-products__item-price-through">$1200</span>
@@ -133,11 +156,11 @@
              <!--Item 1-->
              <div class="new-products__item">
                 <div class="new-products__item-img">
-                    <img src="../aseets/imagenes/productos/mudra-granola.jpeg" alt="">
+                    <img src="../aseets/imagenes/home/coffee-beans.png" alt="Cafe Organico">
                 </div>
                 <div class="new-products__item-details">
                     <div class="new-products__item-price">
-                        <h4 class="new-products__item-title">Title Product</h4>
+                        <h4 class="new-products__item-title">Cafe Organico</h4>
                         <span class="new-products__item-amount">$1200</span>
                     </div>
                     <span class="new-products__item-price-through">$1200</span>
@@ -154,35 +177,14 @@
              <!--Item 1-->
              <div class="new-products__item">
                 <div class="new-products__item-img">
-                    <img src="../aseets/imagenes/productos/mudra-granola.jpeg" alt="">
+                    <img src="../aseets/imagenes/home/soda-tropical.png" alt="Soda Natural">
                 </div>
                 <div class="new-products__item-details">
                     <div class="new-products__item-price">
-                        <h4 class="new-products__item-title">Title Product</h4>
-                        <span class="new-products__item-amount">$1200</span>
+                        <h4 class="new-products__item-title">Soda Tropical</h4>
+                        <span class="new-products__item-amount">$2400</span>
                     </div>
-                    <span class="new-products__item-price-through">$1200</span>
-                    <p class="new-products__item-description">
-                        Lorem ipsum dolor sit amet cons. Bibendum sapien enim dol faucibus amet. Lorem ipsum dolor sit amet 
-                    </p>
-                    <div class="new-products__item-buttons">
-                        <button class="new-products__button new-products__button--increment">+</button>
-                        <button class="new-products__button new-products__button--count">1</button>
-                        <button class="new-products__button new-products__button--decrement">-</button>
-                    </div>
-                </div>
-            </div>
-             <!--Item 1-->
-             <div class="new-products__item">
-                <div class="new-products__item-img">
-                    <img src="../aseets/imagenes/productos/mudra-granola.jpeg" alt="">
-                </div>
-                <div class="new-products__item-details">
-                    <div class="new-products__item-price">
-                        <h4 class="new-products__item-title">Title Product</h4>
-                        <span class="new-products__item-amount">$1200</span>
-                    </div>
-                    <span class="new-products__item-price-through">$1200</span>
+                    <span class="new-products__item-price-through">$1800</span>
                     <p class="new-products__item-description">
                         Lorem ipsum dolor sit amet cons. Bibendum sapien enim dol faucibus amet. Lorem ipsum dolor sit amet 
                     </p>
@@ -194,6 +196,10 @@
                 </div>
             </div>
         </section>
+
+        </section>
+      
+      
         <!------------------------Contenedor de Información----------------------->
         <section class="content__container content">
             <!-- Contenedor de Información -->
@@ -208,7 +214,10 @@
                         Packaging amigable con el planeta
                     </h2>
                   
-                    <p class="content__text">En nuestro local, nos preocupamos por el medio ambiente y por eso hemos elegido utilizar packaging amigable con el entorno en todos nuestros productos. Nuestros envases biodegradables y materiales reciclados no solo protegen el planeta, sino que también reflejan nuestro compromiso con la sostenibilidad. Creemos que cada pequeño gesto cuenta, y estamos comprometidos en ofrecer una experiencia única y responsable a nuestros clientes, donde puedan disfrutar de nuestros productos sabiendo que están contribuyendo a un futuro más verde.</p>
+                    <p class="content__text">Nos enorgullece ofrecerte una selección cuidadosamente curada de alimentos y suplementos que cumplen con los más estrictos estándares de pureza y nutrición.
+                    Cada producto que encuentras aquí es una celebración de la naturaleza, cultivado sin químicos ni aditivos artificiales, garantizando lo mejor para tu bienestar y el del planeta. Desde superfoods hasta suplementos especializados, nuestra oferta está diseñada para apoyar tu salud de manera integral y efectiva.                        
+                    En nuestra dietética, no solo priorizamos la calidad de nuestros productos, sino también tu experiencia de compra. Nuestro personal capacitado está aquí para brindarte asesoramiento personalizado y ayudarte a encontrar lo que mejor se adapta a tus necesidades nutricionales.                                               
+                    ¡Te esperamos para acompañarte en tu camino hacia una vida más saludable!</p>
                     <!--Contenedor de Buttons-->
                     <div class="container__button">
                         <a href="#" class="btn btn--1">Leer más<span class="material-symbols-outlined">arrow_forward</span></a>
@@ -219,84 +228,60 @@
         <!---->
         <section class="content__container">
             <!--Contenedor de Opciones de Menú-->
-            <section class="wrapper">
-                <!--Contenedor de Opciones de Bebidas y Comidas-->
-                <section class="product-list">
+            <section class="wrapper ">
+                <!--Contenedor de Busqueda AAvanzada-->
+                <section class="product-list ">
                     <div class="product-list__item">
-                        <!--Contenedor de Opciones de Bebidas-->
-                        <h3 class="product-list__title">Bebidas</h3>
-                        <h4 class="product-list__subtitle">Cafeteria</h4>
-                        <ul class="product-list__list">
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                        </ul>
-                        <h4 class="product-list__subtitle">Smothies</h4>
-                        <ul class="product-list__list">
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                        </ul>
-                    </div>
-
-                    <!--Contenedor de Opciones de Comidas-->
-                    <div class="product-list__item">
-                        <h3 class="product-list__title">Comidas</h3>
-                        <h4 class="product-list__subtitle">Dulce</h4>
-                        <ul class="product-list__list">
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                        </ul>
-                        <h4 class="product-list__subtitle">Salado</h4>
-                        <ul class="product-list__list">
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                            <li class="product-list__list-item">Cafe Expresso</li>
-                        </ul>
+                        <h3 class="product-list__title">Busqueda Avanzada</h3>
+                        <h4 class="product-list__subtitle">Escala Precios</h4>
+                        <div class="button__actions">
+                            <button class="category__add">-$1000</button>
+                            <button class="category__add">$1000</button>
+                            <button class="category__add">+$1000</button>
+                        </div>
+                        <h4 class="product-list__subtitle">Marcas</h4>
+                        <div class="search-container">
+                            <i class='bx bx-search'></i>
+                            <input type="text" class="search-bar__input" placeholder="Buscar...">
+                        </div>
+                        <h4 class="product-list__subtitle">Marcas</h4>
+                        <div class="search-container">
+                            <i class='bx bx-search'></i>
+                            <input type="text" class="search-bar__input" placeholder="Buscar...">
+                        </div>
                     </div>
                 </section>
 
                 <!--Contenedor de Categorias del Menú-->
                 <section class="menu-categories">
-                    <div class="menu-categories__search">
-                        <input type="text" class="menu-categories__search-input">
-                    </div>
                     <div class="menu-categories__buttons">
                         <ul class="menu-categories__list">
-                            <li class="menu-categories__list-item"><a href="../Html/menu.html" class="menu-categories__link">Bebidas</a></li>
-                            <li class="menu-categories__list-item"><a href="../Html/menucomidas.html" class="menu-categories__link">Comidas</a></li>
-                            <li class="menu-categories__list-item"><a href="#" class="menu-categories__link">Favoritos</a></li>
+                            <li class="menu-categories__list-item"><a href="../Html/menu.html" class="menu-categories__link">Ofertas</a></li>
+                            <li class="menu-categories__list-item"><a href="../Html/menu.html" class="menu-categories__link">Cereales</a></li>
+                            <li class="menu-categories__list-item"><a href="../Html/menucomidas.html" class="menu-categories__link">Frutos Secos</a></li>
+                            <li class="menu-categories__list-item"><a href="#" class="menu-categories__link">Suplementos</a></li>
+                            <li class="menu-categories__list-item"><a href="#" class="menu-categories__link">Snacks</a></li>
                         </ul>
                     </div>
                     <!--Categoría Cafeteria-->
                     <section class="category">
                         <div class="category__title">
-                            <h3 class="category__title-text">Cafeteria</h3>
+                            <h3 class="category__title-text">Ofertas</h3>
                         </div>
                         <section class="category__list">
-                            <!--Primer Item-->
+                            <!--Item 1-->
                             <div class="category__item">
                                 <div class="category__image">
-                                    <img src="../aseets/imagenes/menu/Espresso.svg" alt="Cafe Expreso">
+                                    <img src="../aseets/imagenes/productos/aceite-de-coco-virgen-organico-entrenuts.jpg" alt="Aceite de Coco Organico" class="lazyload">
                                 </div>
                                 <div class="category__details">
-                                    <h4 class="category__details-title">Title Product</h4>
-                                    <span class="category__details-price">$1200</span>
+                                    <div class="catagory__detailes-group">
+                                        <h4 class="category__details-title">Aceite de Coco Virgen</h4>
+                                        <span class="category__details-price">$6500</span>
+                                    </div>
+                                    <p class="category__description"> Aceite EntreNuts, natural y rico en ácidos grasos, perfecto para cocinar y tratamientos de belleza.</p>
                                 </div>
-                                <p class="category__description">Lorem ipsum dolor sit amet cons. Bibendum sapien enim dol faucibus amet. Lorem ipsum dolor sit amet</p>
+                                
                                 <div class="button__actions">
                                     <button class="category__add">Agregar</button>
                                     <button class="category__like">
@@ -304,23 +289,106 @@
                                     </button>
                                 </div>
                             </div>
-                            <!--Segundo Item-->
-                            <div class="category__item">
-                                <div class="category__image">
-                                    <img src="../aseets/imagenes/menu/Americano.svg" alt="Cafe Expreso">
-                                </div>
-                                <div class="category__details">
-                                    <h4 class="category__details-title">Title Product</h4>
-                                    <span class="category__details-price">$1200</span>
-                                </div>
-                                <p class="category__description">Lorem ipsum dolor sit amet cons. Bibendum sapien enim dol faucibus amet. Lorem ipsum dolor sit amet</p>
-                                <div class="button__actions">
-                                    <button class="category__add">Agregar</button>
-                                    <button class="category__like">
-                                        <span class="material-symbols-outlined">favorite</span>
-                                    </button>
-                                </div>
+                            <!--Item 2-->
+                           <div class="category__item">
+                            <div class="category__image">
+                                <img src="../aseets/imagenes/productos/aceite-de-coco-neutro-entrenuts.jpg" alt="Aceite de Coco Neutro maca Entrenuts" class="lazyload">
                             </div>
+                            <div class="category__details">
+                                <div class="catagory__detailes-group">
+                                    <h4 class="category__details-title">Aceite de Coco Neutro</h4>
+                                    <span class="category__details-price">$5500</span>
+                                </div>
+                                <p class="category__description">Aceite EntreNuts, refinado para eliminar sabor y aroma a coco, ideal para cocinar sin alterar los sabores. </p>
+                            </div>
+                            
+                            <div class="button__actions">
+                                <button class="category__add">Agregar</button>
+                                <button class="category__like">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                            </div>
+                             <!--Item 3-->
+                           <div class="category__item">
+                            <div class="category__image">
+                                <img src="../aseets/imagenes/productos/8e93d997ade678649f0cdbf4c56fc2ca95a9f09a4870199f5568bcc77d2227dc11222.png" alt="Dulce de Leche Felices las Vacas" class="lazyload">
+                            </div>
+                            <div class="category__details">
+                                <div class="catagory__detailes-group">
+                                    <h4 class="category__details-title">Dulce de Leche</h4>
+                                    <span class="category__details-price">$2500</span>
+                                </div>
+                                <p class="category__description">Dulce de leche "Felices las Vacas" hecho con ingredientes 100% vegenos, ideal para untar y rellenar postres.</p>
+                            </div>
+                            
+                            <div class="button__actions">
+                                <button class="category__add">Agregar</button>
+                                <button class="category__like">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
+                          <!--Item 4-->
+                          <div class="category__item">
+                            <div class="category__image">
+                                <img src="../aseets/imagenes/productos/Pochoclos-Organicos-Con-Azucar-Y-Sal-Bamboo-80G-1.gif" alt="Pochoclos Orgánicos" class="lazyload">
+                            </div>
+                            <div class="category__details">
+                                <div class="catagory__detailes-group">
+                                    <h4 class="category__details-title">Pochoclos Orgánicos</h4>
+                                    <span class="category__details-price">$3500</span>
+                                </div>
+                                <p class="category__description">Pochoclos Bamboo, snack crujiente y saludable, elaborado con maíz 100% orgánico y sin aditivos.</p>
+                            </div>
+                            
+                            <div class="button__actions">
+                                <button class="category__add">Agregar</button>
+                                <button class="category__like">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
+                         <!--Item 5-->
+                         <div class="category__item">
+                            <div class="category__image">
+                                <img src="../aseets/imagenes/productos/wakas_kale.jpg" alt="Fideos Integrales Wakkas" class="lazyload">
+                            </div>
+                            <div class="category__details">
+                                <div class="catagory__detailes-group">
+                                    <h4 class="category__details-title">Fideos Integrales Wakka</h4>
+                                    <span class="category__details-price">$3500</span>
+                                </div>
+                                <p class="category__description">Fideos Integrales Wakka, hechos con trigo integral, ricos en fibra y nutrientes, con una textura al dente.</p>
+                            </div>
+                            
+                            <div class="button__actions">
+                                <button class="category__add">Agregar</button>
+                                <button class="category__like">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
+                         <!--Item 6-->
+                         <div class="category__item">
+                            <div class="category__image">
+                                <img src="../aseets/imagenes/productos/mudra-granola.jpeg" alt="Mudra Granola" class="lazyload">
+                            </div>
+                            <div class="category__details">
+                                <div class="catagory__detailes-group">
+                                    <h4 class="category__details-title">Mudra Granola</h4>
+                                    <span class="category__details-price">$10000</span>
+                                </div>
+                                <p class="category__description">Mezcla crujiente de avena, frutos secos y semillas, endulzada naturalmente, ideal para el desayuno o snacks.</p>
+                            </div>
+                            
+                            <div class="button__actions">
+                                <button class="category__add">Agregar</button>
+                                <button class="category__like">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
                            
                         </section>
                     </section>

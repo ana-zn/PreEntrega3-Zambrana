@@ -63,19 +63,9 @@
     }
     //Contenedor MENU
     .wrapper{
-        .product-list{
-           display: none;
-        }
         .category{
             .category__list{
-                display: grid;
                 grid-template-columns: repeat(1, 1fr);
-                .category__item{
-                    padding: 16px;
-                    .category__description{
-                        height: 80px;
-                    }
-                }
             }
         }
 

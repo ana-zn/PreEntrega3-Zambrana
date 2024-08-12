@@ -147,7 +147,25 @@
             height: 256px;
         }
     }
-  
+    //Contenedor MENU
+    .wrapper{
+        .product-list{
+           display: none;
+        }
+        .category{
+            .category__list{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                .category__item{
+                    padding: 16px;
+                    .category__description{
+                        height: 80px;
+                    }
+                }
+            }
+        }
+
+    }
    
   }
   
