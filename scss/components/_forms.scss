@@ -14,23 +14,34 @@
             .form__input{
                 border: none; 
                 border-radius: 0px;
-                border-bottom: 2px solid $primarycolor;
+                border-bottom:$border-primary; 
                 padding: 8px;
+                background-color: transparent;
+            }
+            .form__input:focus{
+                outline: none;
             }
             .form__textarea{
                 @extend .form__input; 
-                padding: 16px 0px 32px 0px ;
+                padding: 8px ;
                 min-width: 100%; 
                 resize:vertical; 
-                font-family: var(--primary-font);
+                font-family: $primary-font; 
+            }
+            .form__textarea:focus{
+                outline: none;
             }
             .form__select{
                 width: 100%;
                 background-color: transparent;
                 border: none;
-                border-bottom: 2px solid $primarycolor; 
+                border-bottom: $border-primary; 
                 padding: 8px;
                 color: $primarycolor; 
+                margin-top: 16px;
+            }
+            .form__select:focus{
+                outline: none;
             }
         }
         

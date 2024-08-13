@@ -9,7 +9,7 @@
     }
   
     .banner-gradient {
-      padding-top: 52px;
+      padding: 52px 120PX;
     }
   
     .footer__primary {
@@ -28,7 +28,49 @@
             height: 160px;
         }
     } 
-   
+  }
+  //Contenedor de Informacion 
+  .content{
+    .content__info{
+      .content__primary{
+        .content__image{
+          height: 100%;
+        }
+      }
+      .content__secondary{
+        padding-top: 0px;
+      }
+
+    }
+  }
+  //Contenedor de preguntas frecuentes
+  .contact-container{
+    gap:16px; 
+    .faq-container{
+      .faq-container__item{
+        .faq-container__summary{
+          
+        }
+      }
+    }
+  }
 }
+
+
+
+
+
+//
+/*
+.content__container{
+  .info__container{
+    .item__container--secondary{
+      padding-top: 0px;
+      justify-content: space-between;
+    }
+  }
 }
+*/
+
+
   

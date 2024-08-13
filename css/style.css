@@ -972,12 +972,19 @@ $font-size-xs: 0.5rem;
   border-radius: 0px;
   border-bottom: 2px solid #25282A;
   padding: 8px;
+  background-color: transparent;
+}
+.contact-container .contact-container__form .form__input-group .form__input:focus, .contact-container .contact-container__form .form__input-group .form__textarea:focus {
+  outline: none;
 }
 .contact-container .contact-container__form .form__input-group .form__textarea {
-  padding: 16px 0px 32px 0px;
+  padding: 8px;
   min-width: 100%;
   resize: vertical;
-  font-family: var(--primary-font);
+  font-family: "Roboto", sans-serif;
+}
+.contact-container .contact-container__form .form__input-group .form__textarea:focus {
+  outline: none;
 }
 .contact-container .contact-container__form .form__input-group .form__select {
   width: 100%;
@@ -986,6 +993,10 @@ $font-size-xs: 0.5rem;
   border-bottom: 2px solid #25282A;
   padding: 8px;
   color: #25282A;
+  margin-top: 16px;
+}
+.contact-container .contact-container__form .form__input-group .form__select:focus {
+  outline: none;
 }
 
 .products {
@@ -1099,7 +1110,7 @@ $font-size-xs: 0.5rem;
     padding: 0 120px;
   }
   .banner-gradient {
-    padding-top: 52px;
+    padding: 52px 120PX;
   }
   .footer__primary {
     padding-top: 48px;
@@ -1111,7 +1122,26 @@ $font-size-xs: 0.5rem;
   .area-container-card .card-container .card-item__image {
     height: 160px;
   }
+  .content .content__info .content__primary .content__image, .content .content__info .content__secondary .content__image {
+    height: 100%;
+  }
+  .content .content__info .content__secondary {
+    padding-top: 0px;
+  }
+  .contact-container {
+    gap: 16px;
+  }
 }
+/*
+.content__container{
+  .info__container{
+    .item__container--secondary{
+      padding-top: 0px;
+      justify-content: space-between;
+    }
+  }
+}
+*/
 /*-------------------Variables-------------*/
 /*---Colores---*/
 /* Gris claro */
@@ -1180,16 +1210,23 @@ $font-size-xs: 0.5rem;
     flex-grow: 1;
     order: 3;
   }
+  .main__header .header__navbar .menu-responsive i {
+    font-size: 2rem;
+  }
   .main__header .header__navbar .nav__container {
     display: none;
   }
   .main__header .header__navbar .header__logo {
     justify-content: flex-start;
     flex-grow: 1;
+    width: 160px;
   }
   .main__header .header__navbar .header__search {
     width: 100%;
     flex-grow: 1;
+  }
+  .main__header .header__navbar .material-symbols-outlined {
+    font-size: 2rem;
   }
   .header--home {
     height: 680px;
@@ -1293,7 +1330,8 @@ $font-size-xs: 0.5rem;
     flex-direction: column;
   }
   .content__container .title__container .title__text {
-    margin-left: 40px;
+    font-size: 3rem;
+    margin-top: 40px;
   }
   .contact-container {
     flex-direction: column;
@@ -1305,6 +1343,9 @@ $font-size-xs: 0.5rem;
   .contact-container .faq-container {
     width: 100%;
   }
+  .contact-container .faq-container .faq-container__summary {
+    width: 88px;
+  }
 }
 @media (max-width: 600px) {
   .main__header,
@@ -1312,10 +1353,10 @@ $font-size-xs: 0.5rem;
   .content__container,
   .banner-gradient,
   .footer__primary {
-    padding: 0 16px;
+    padding: 0 32px;
   }
   .banner-gradient {
-    padding: 24px 16px;
+    padding: 24px 32px;
   }
   .banner-gradient .banner-gradient__heading {
     font-size: 2rem;
@@ -1403,6 +1444,9 @@ $font-size-xs: 0.5rem;
     padding-top: 16px;
     max-width: 100%;
   }
+  .products .new-products {
+    padding-left: 32px;
+  }
   .area-container-card .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1441,7 +1485,7 @@ $font-size-xs: 0.5rem;
   }
   .title__container .title__text {
     margin-top: 32px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .menu-categories .menu-categories__buttons {
     padding: 8px 0px;
@@ -1454,6 +1498,28 @@ $font-size-xs: 0.5rem;
   }
   .menu-categories .menu-categories__buttons .menu-categories__list .menu-categories__list-item .menu-categories__link {
     font-size: 0.875rem;
+  }
+  .main__header .header__navbar .menu-responsive {
+    order: 1;
+    flex: 1;
+  }
+  .main__header .header__navbar .nav__container {
+    display: none;
+  }
+  .main__header .header__navbar .header__logo {
+    order: 2;
+    flex: 1;
+  }
+  .main__header .header__navbar .header__search {
+    flex: 1;
+    justify-content: flex-end;
+    order: 3;
+  }
+  .main__header .header__navbar .header__search .search-container {
+    display: none;
+  }
+  .main__header .header__navbar .material-symbols-outlined {
+    font-size: 2rem;
   }
   .banner-group {
     height: 160px;

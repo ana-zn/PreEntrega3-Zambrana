@@ -17,7 +17,7 @@
     .title__container{
         .title__text{
             margin-top: 32px;
-            font-size: $font-size-xxl;
+            font-size: $font-size-xl;
         }
 
     } 
@@ -37,7 +37,33 @@
            
         }
     }
-
+    //header
+    .main__header{
+        .header__navbar{
+            .menu-responsive{
+                order: 1;
+                flex: 1;
+            }
+            .nav__container{
+                display: none;
+            }
+            .header__logo{
+               order: 2;
+               flex: 1;
+            }
+            .header__search{
+                flex: 1;
+                justify-content: flex-end;
+                order: 3;
+                .search-container{
+                    display: none;
+                }
+            }
+            .material-symbols-outlined {
+                font-size: $font-size-xxl; 
+            }
+        }
+    }
     //Banners
     .banner-group{
         height: 160px;
