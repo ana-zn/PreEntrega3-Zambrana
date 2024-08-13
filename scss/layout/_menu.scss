@@ -8,12 +8,13 @@
         .product-list__item{
             padding-right: 16px;
            .product-list__title{
-            font-size: $font-size-xl;
+            font-size: $font-size-m;
             text-transform: uppercase;
+            margin-bottom: 16px;
            }
            .product-list__subtitle{
-            font-size: $font-size-l;
-            padding-top: 8px;
+            font-size: $font-size-m;
+            margin: 8px 0px;
            }
            .product-list__list{
             list-style: none;

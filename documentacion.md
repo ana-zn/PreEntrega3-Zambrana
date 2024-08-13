@@ -7,22 +7,27 @@ project/
 │   │   ├── _header.scss                  # Estilos de la cabecera
 │   │   ├── _main.scss                    # Estilos principales
 │   │   ├── _grid.scss                    # Sistema de rejilla (grid)
+│   │   ├── _menu.scss                    # Estilos de la carta de Crumbly
+│   │   ├── _grid.scss                    # Sistema de rejilla (grid)
+│   │   ├── _register.scss                # Login de register
+│   │   ├── _section-title                # Estilo de todos los titulos
 │   ├── components/
-│   │   ├── _card.scss                    # Estilos específicos para las tarjetas
-│   │   ├── _home.scss                    # Estilos para la página de inicio
-│   │   ├── _product-listing.scss         # Estilos para el listado de productos
-│   │   ├── _product-detail.scss          # Estilos para el detalle de productos
-│   │   ├── _about.scss                   # Estilos para la página "Nosotros"
-│   │   ├── _contact.scss                 # Estilos para la página de contacto
-│   │   ├── _recipes.scss                 # Estilos para la página de recetas
+│   │   ├── _container-card.scss          # Estilos específicos para las tarjetas
+│   │   ├── _container-info.scss          # Contenedor de informacion 
+│   │   ├── _container-productos.scss     # Estilos para el listado de productos
+│   │   ├── _faq-contianer.scss           # Estilos de los contenedores de preguntas frecuentes
+│   │   ├── _forms.scss                   # Estilos para los formularios
+│   │   ├── _search.scss                  # Estilos para la barra de busqueda
+│   │   ├── _services.scss                # Estilos para contenedor de servicios
 │   │   ├── _buttons.scss                 # Estilos para los botones
-│   │   ├── _forms.scss                   # Estilos para formularios
-│   │   ├── _navbar.scss                  # Estilos para la barra de navegación
-│   │   ├── _modals.scss                  # Estilos para modales
+│   │   ├── _title.scss                   # Estilos para los titulos 
+│   ├── Responsive/
+│   │   ├── _desktopsmall.scss            # Estilos para pantallas desktop mas pequeñas
+│   │   ├── _mobile-xs.scss               # Estilos para mobiles 360px
+│   │   ├── _mobile.scss                  # Estilos para mobiles en horizontal 600px
+│   │   ├── _tablet.scss                  # Estilos para pantallas mobile
 │   ├── banners/
-│   │   ├── _banner1.scss                 # Estilos específicos para banner 1
-│   │   ├── _banner2.scss                 # Estilos específicos para banner 2
-│   │   └── _banner3.scss                 # Estilos específicos para banner 3
+│   │   └── _banner.scss                 # Estilos específicos para banner 3
 │   ├── utilities/
 │   │   └── _variables.scss               # Variables y mixins SCSS
 │   └── style.scss                        # Archivo SCSS principal que importa todos los demás

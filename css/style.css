@@ -123,6 +123,7 @@ $font-size-xs: 0.5rem;
   position: relative;
   width: 100%;
   text-decoration: none;
+  color: #25282A;
   /* Transiciones */
 }
 .main__header .header__navbar .nav__container .header__nav-list .header__nav-list-item .header__nav-link:after {
@@ -234,12 +235,13 @@ $font-size-xs: 0.5rem;
   padding-right: 16px;
 }
 .wrapper .product-list .product-list__item .product-list__title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .wrapper .product-list .product-list__item .product-list__subtitle {
-  font-size: 1.25rem;
-  padding-top: 8px;
+  font-size: 1rem;
+  margin: 8px 0px;
 }
 .wrapper .product-list .product-list__item .product-list__list {
   list-style: none;
@@ -424,6 +426,10 @@ $font-size-xs: 0.5rem;
   font-weight: 400;
   margin-bottom: 48px;
 }
+.footer .footer__primary .footer__links .footer__link-item .footer__list {
+  margin-bottom: 0px;
+  padding: 0px;
+}
 .footer .footer__primary .footer__links .footer__link-item .footer__list .footer__list-item {
   margin: 8px 0;
   list-style: none;
@@ -431,6 +437,8 @@ $font-size-xs: 0.5rem;
 }
 .footer .footer__primary .footer__links .footer__link-item .footer__list .footer__list-item .footer__link {
   width: 100%;
+  color: #25282A;
+  text-decoration: none;
   text-transform: uppercase;
 }
 .footer .footer__primary .footer__social {
@@ -449,6 +457,7 @@ $font-size-xs: 0.5rem;
   display: flex;
   gap: 16px;
   justify-content: center;
+  padding: 0px;
 }
 .footer .footer__primary .footer__social .footer__social-items .footer__social-list .footer__social-list-item {
   list-style: none;
@@ -652,6 +661,11 @@ $font-size-xs: 0.5rem;
   height: 100%;
   max-height: 7.5em;
   margin-top: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .wrap__container {
