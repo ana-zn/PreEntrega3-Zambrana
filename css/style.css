@@ -142,8 +142,7 @@ $font-size-xs: 0.5rem;
 .main__header .header__logo {
   display: flex;
   justify-content: center;
-  flex-grow: 1;
-  width: 240px;
+  margin: 0 16px;
 }
 .main__header .header__search {
   display: flex;
@@ -176,8 +175,13 @@ $font-size-xs: 0.5rem;
   font-size: 1.25rem;
   color: #fff;
 }
-.header--home .nav-bar--home .nav-list--home .nav-link--home {
+.header--home .nav-bar--home .header__nav--home .nav-list--home .nav-list-item--home .nav-link--home {
   color: #fff;
+  /* Transiciones */
+}
+.header--home .nav-bar--home .header__nav--home .nav-list--home .nav-list-item--home .nav-link--home:after {
+  content: "";
+  background-color: #fff;
 }
 .header--home .header__search {
   /* Contenedor iconos de usuario y carrito de compras */
@@ -663,6 +667,10 @@ $font-size-xs: 0.5rem;
   margin-top: 16px;
 }
 
+.area-container--secondary {
+  padding: 0px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -806,6 +814,12 @@ $font-size-xs: 0.5rem;
   font-size: 0.875rem;
   cursor: pointer;
   text-transform: uppercase;
+}
+.button__actions .category__ad--count {
+  width: 100%;
+}
+.button__actions .category__ad--item {
+  width: 32px;
 }
 .button__actions .category__add:hover {
   background-color: #25282A;
@@ -1050,25 +1064,27 @@ $font-size-xs: 0.5rem;
   border-radius: 100px;
   object-fit: cover;
 }
-.products .new-products__item-details {
+.products .new-products__item .new-products__item-details {
   padding: 0 16px;
   border-right: 2px solid #25282A;
 }
-.products .new-products__item-details-price {
+.products .new-products__item .new-products__item-details .new-products__item-price {
   display: flex;
   width: 100%;
   justify-content: space-between;
   text-align: left;
 }
-.products .new-products__item-details-price-through {
+.products .new-products__item .new-products__item-details .new-products__item-price .new-products__item-title, .products .new-products__item .new-products__item-details .new-products__item-price .new-products__item-amount {
+  font-weight: 600;
+}
+.products .new-products__item .new-products__item-details .new-products__item-price-through {
   text-decoration: line-through;
   color: #686565;
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-.products .new-products__item-details-description {
-  color: #686565;
+.products .new-products__item .new-products__item-details .new-products__item-description {
   margin: 16px 0;
 }
 
@@ -1133,6 +1149,14 @@ $font-size-xs: 0.5rem;
   .header--home {
     height: 744px;
   }
+  .title-primary {
+    margin-top: 136px;
+  }
+  .title-primary .title-primary__heading {
+    font-size: 4.5rem;
+    line-height: 100%;
+  }
+  /*Contenedor de recetas*/
   .area-container-card .card-container .card-item__image {
     height: 160px;
   }
@@ -1213,8 +1237,12 @@ $font-size-xs: 0.5rem;
   .main___container {
     gap: 40px;
   }
+  .title-primary {
+    margin-top: 116px;
+  }
   .title-primary .title-primary__heading {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    line-height: 90%;
   }
   .main__header .header__navbar {
     justify-content: space-between;
@@ -1243,7 +1271,7 @@ $font-size-xs: 0.5rem;
     font-size: 2rem;
   }
   .header--home {
-    height: 680px;
+    height: 704px;
   }
   .header--home .nav-bar--home .header__nav--home .nav-list--home {
     display: none;
@@ -1376,7 +1404,7 @@ $font-size-xs: 0.5rem;
     font-size: 2rem;
   }
   .header--home {
-    height: 600px;
+    height: 664px;
     margin-bottom: 40px;
   }
   .footer .footer__primary {
@@ -1410,8 +1438,11 @@ $font-size-xs: 0.5rem;
   .main___container {
     gap: 40px;
   }
+  .title-primary {
+    margin-top: 86px;
+  }
   .title-primary .title-primary__heading {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .banner-group {
     height: 320px;
@@ -1488,14 +1519,15 @@ $font-size-xs: 0.5rem;
 }
 @media (max-width: 360px) {
   .header--home {
-    height: 500px;
+    height: 624px;
     margin-bottom: 40px;
   }
   .title-primary {
-    margin-top: 120px;
+    margin-top: 66px;
   }
-  .title-primary .title-primary .title-primary__heading {
-    font-size: 2rem;
+  .title-primary .title-primary__heading {
+    font-size: 2.25rem;
+    line-height: 90%;
   }
   .title__container .title__text {
     margin-top: 32px;

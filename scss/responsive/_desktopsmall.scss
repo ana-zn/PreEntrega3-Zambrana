@@ -16,12 +16,20 @@
       padding-top: 48px;
       margin-bottom: 72px;
     }
-     //header
-     .header--home{
-      height: 744px;
-  }
-
-  //Contenedor de recetas
+    //---HEADER---
+    .header--home{
+      height: 744px;        
+    }
+    .title-primary{
+      margin-top: 136px;
+      //Font size
+      .title-primary__heading{
+          font-size:$font-size-xxxxl; 
+          line-height: $line-height-large;
+      }
+    }
+    
+  /*Contenedor de recetas*/
   .area-container-card {
     .card-container{
         .card-item__image{

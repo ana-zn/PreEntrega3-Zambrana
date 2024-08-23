@@ -16,7 +16,7 @@
     }
      //Header
      .header--home{
-        height: 600px;
+        height: 664px;
         margin-bottom: 40px;
     }
     
@@ -64,12 +64,15 @@
     .main___container{
         gap:40px; 
     }
-    //Font size
+
+    //HEADER
     .title-primary{
+        margin-top: 86px;
         .title-primary__heading{
-            font-size:2rem; 
+            font-size:$font-size-xxl-plus; 
         }
     }
+
 
    
     //BANNERS

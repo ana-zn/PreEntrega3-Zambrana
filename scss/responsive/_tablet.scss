@@ -48,10 +48,12 @@
     .main___container{
         gap:40px; 
     }
-    //Font size
+    //HEADER
     .title-primary{
+        margin-top: 116px;
         .title-primary__heading{
-            font-size:$font-size-xxxl; 
+            font-size:$font-size-xxxl-plus; 
+            line-height: $line-height-medium; 
         }
     }
 
@@ -86,7 +88,7 @@
     }
     
     .header--home{
-        height: 680px;
+        height: 704px;
         .nav-bar--home{
             .header__nav--home{
                 .nav-list--home{

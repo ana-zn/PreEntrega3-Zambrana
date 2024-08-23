@@ -38,18 +38,21 @@
                 }
             }
     
-            &-details {
+            .new-products__item-details {
                 padding: 0 16px;
-                border-right: 2px solid $primarycolor;
+                border-right:$border-primary; 
     
-                &-price {
+                .new-products__item-price {
                     display: flex;
                     width: 100%;
                     justify-content: space-between;
                     text-align: left;
+                    .new-products__item-title,.new-products__item-amount{
+                        font-weight: 600;
+                    }
                 }
-    
-                &-price-through {
+               
+                .new-products__item-price-through {
                     text-decoration: line-through;
                     color: $gray-dark;
                     display: flex;
@@ -57,8 +60,7 @@
                     width: 100%;
                 }
     
-                &-description {
-                    color: $gray-dark;
+                .new-products__item-description {
                     margin: 16px 0;
                 }
             }
