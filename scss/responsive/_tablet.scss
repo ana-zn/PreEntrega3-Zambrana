@@ -67,10 +67,30 @@
                 order: 3;
                 i{
                     font-size: $font-size-xxl; 
+                    cursor: pointer;
                 }
             }
             .nav__container{
-                display: none;
+                height:0px;
+                position: absolute;
+                top: 80px; 
+                left: 0;
+                right: 0; 
+                width: 100vw;
+                background: #11101e;
+                transition: 0.5s;
+                overflow: hidden;
+                .active{
+                    height: 450px;
+                }
+                .header__nav-list{
+                    display: block;
+                    width: fit-content;
+                    margin: 80px auto 0 auto;
+                    text-align: center;
+                    transition: 0.5s ;
+                    opacity: 0;
+                }
             }
             .header__logo{
                 justify-content: flex-start;

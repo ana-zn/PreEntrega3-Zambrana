@@ -1287,9 +1287,29 @@ $font-size-xs: 0.5rem;
   }
   .main__header .header__navbar .menu-responsive i {
     font-size: 2rem;
+    cursor: pointer;
   }
   .main__header .header__navbar .nav__container {
-    display: none;
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101e;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .main__header .header__navbar .nav__container .active {
+    height: 450px;
+  }
+  .main__header .header__navbar .nav__container .header__nav-list {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
   }
   .main__header .header__navbar .header__logo {
     justify-content: flex-start;
