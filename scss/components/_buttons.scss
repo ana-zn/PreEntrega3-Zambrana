@@ -120,19 +120,30 @@
     width: 100%;
     .category__add{
         width: 100%;
-        padding: 6px 0;
         background-color: transparent;
         border: 2px solid $primarycolor;
-        border-radius: 50px;
         font-size: $font-size-s;
         cursor: pointer;
         text-transform: uppercase;
+        border-radius: 100px;
+        padding: 8px 0;
+
+       
     }
     .category__ad--count{
+        flex: 1;
+        border-radius: 50px;
         width: 100%;
+        height: 100%; 
+        
     }
     .category__ad--item{
-        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        width: 32px; 
+        height: 32px; 
     }
     .category__add:hover{
         background-color: $primarycolor; 

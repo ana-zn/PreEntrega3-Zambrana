@@ -45,6 +45,8 @@
 }
 /*Banner Gradiente*/
 .banner-gradient{
+    position: relative;
+    z-index: 1;
     height: auto;
     text-align: left;
     padding: 80px 144px;

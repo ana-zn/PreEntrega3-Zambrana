@@ -36,12 +36,16 @@
     box-sizing: border-box;
     align-items: center;
     width: 100%;
+    a{
+        cursor: pointer;
+    }
     .title-container__title{
         font-size: $font-size-xxl-plus; 
         text-transform: uppercase;
         text-align: center;
         white-space: nowrap;
         padding: 0 8px;
+        color: $primarycolor;
     }
     .title-container__line{
         border: none; 
