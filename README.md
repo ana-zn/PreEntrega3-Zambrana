@@ -3,8 +3,8 @@
 Este proyecto es ficticio y se ha creado para la práctica de desarrollo web en el curso de Coderhouse. El objetivo es demostrar habilidades en la construcción de sitios web, con un enfoque en la identidad visual y la coherencia de la marca.
 ## Enlaces de Diseño 🌐
 
-- **Behance**: [Ver proyecto en Behance](https://www.behance.net/usuario)
-- **Figma**: [Ver prototipo en Figma](https://www.figma.com/file/ejemplo)
+- **Behance**: https://www.behance.net/gallery/206723015/Crumbly-Coffee-break-UXUI-DESIGN-BRAND-IDENTITY 
+- **Figma**: https://www.figma.com/design/i77gJ6a36zOZhgfXqGcX7T/06.-Crumby-Coderhouse?node-id=98-1085&t=tzjTLBETzGBgrHVI-1 
 
 ## Descripción  📝
 <p align="center">
