@@ -95,6 +95,8 @@ $font-size-xs: 0.5rem;
 }
 .main__header .header__navbar .nav__container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   /* Links del Menú */
 }
@@ -664,9 +666,10 @@ $font-size-xs: 0.5rem;
   max-height: 7.5em;
   margin-top: 16px;
 }
-
-.area-container--secondary {
-  padding: 0px;
+.area-container-card .card-container--recetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .wrapper {

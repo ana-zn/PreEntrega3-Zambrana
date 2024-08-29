@@ -63,14 +63,18 @@
                     margin-top: 16px;
                 }
             }
-        }
-            
+        }    
     }
+    .card-container--recetas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
 }
-.area-container--secondary{
-    padding: 0px;
-}
-//mvv
+
+
+//mision vision y valores
 .wrapper{
     display: flex;
     flex-direction: row;
