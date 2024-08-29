@@ -1,4 +1,102 @@
-.contact-container{
+    .container_content{
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex; 
+        justify-content: space-between;
+        margin-top: 56px;
+        padding: 40px 114px;
+        gap: 32px;
+        width: 100%;
+        .container{
+            display: flex;
+            flex-direction:row; 
+            justify-content: center;
+            align-items: center;
+            box-sizing: content-box;
+            position: relative;
+            width:100%;
+            height: 650px
+        }
+        .box{
+            overflow: hidden;
+            box-sizing: border-box;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            padding: 30px;
+            h2{
+                font-family: $secondary-font;
+                font-size: $font-size-xxl-plus; 
+                text-align: left; 
+                font-weight: 400;
+            }
+            img{
+                height: auto;
+                overflow: hidden;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        .box1 {
+            background-color: $primarycolor; 
+            top: 0;
+            left: 0;
+          
+        }
+        
+        .box2 {
+            border: $border-primary; 
+            background-color: $grey-background; 
+            gap:24px; 
+            top: -15px; 
+            left: -15px;
+            display: flex;
+            flex-direction: column;
+            padding: 32px; 
+            .form__input-group{
+                display: flex;
+                flex-direction: column;
+                gap: 16px; 
+                .form__input{
+                    border: none; 
+                    border-radius: 0px;
+                    border-bottom:$border-primary; 
+                    padding: 8px;
+                    background-color: transparent;
+                }
+                .form__input:focus{
+                    outline: none;
+                }
+                .form__textarea{
+                    @extend .form__input; 
+                    padding: 8px ;
+                    min-width: 100%; 
+                    resize:vertical; 
+                    font-family: $primary-font; 
+                }
+                .form__textarea:focus{
+                    outline: none;
+                }
+                .form__select{
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: $border-primary; 
+                    padding: 8px;
+                    color: $primarycolor; 
+                    margin-top: 16px;
+                }
+                .form__select:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+
+
+
+/*.contact-container{
     display: flex;
     flex-direction: row;
     gap: 32px; 
@@ -46,4 +144,4 @@
         }
         
     }
-}
+}*/

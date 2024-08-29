@@ -281,21 +281,20 @@
         }
     }
    }
+  }
    //Contenedor Contacto 
-   .contact-container{
+   .container_content{
+    flex-direction: column;
+    margin-top: 32px;
+    padding: 24px 96px;
+   }
+
+   //Contenedor preguntas frecuentes
+   .faq--content{
     flex-direction: column;
     gap:0px; 
-    .contact-container__form{
-        margin-bottom: 24px;
-    }
-    //Contenedor de Preguntas Frecuentes
     .faq-container{
-        width: 100%;
-        .faq-container__summary{
-            width: 88px; 
-        }
+        width: 100%;;
     }
    }
-   
-  }
   
