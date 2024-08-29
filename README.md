@@ -1,6 +1,10 @@
  # 🍪🥐 Crumbly - Proyecto de Desarrollo Web 🍪🥐
 
 Este proyecto es ficticio y se ha creado para la práctica de desarrollo web en el curso de Coderhouse. El objetivo es demostrar habilidades en la construcción de sitios web, con un enfoque en la identidad visual y la coherencia de la marca.
+## Enlaces de Diseño 🌐
+
+- **Behance**: [Ver proyecto en Behance](https://www.behance.net/usuario)
+- **Figma**: [Ver prototipo en Figma](https://www.figma.com/file/ejemplo)
 
 ## Descripción  📝
 <p align="center">
@@ -37,9 +41,6 @@ Crumbly es una tienda orgánica y un café saludable que combina productos natur
 - **SEO**: Se han aplicado técnicas básicas de SEO para mejorar la visibilidad del sitio en los motores de búsqueda, incluyendo metaetiquetas y descripciones adecuadas.
 - **Funcionalidad**: Incluye todas las páginas necesarias para una experiencia de usuario completa, como inicio, menús, contacto y productos.
 
-## Enlaces de Diseño 🌐
 
-- **Behance**: [Ver proyecto en Behance](https://www.behance.net/usuario)
-- **Figma**: [Ver prototipo en Figma](https://www.figma.com/file/ejemplo)
 
 Este README resume el propósito del proyecto, el proceso de desarrollo y los aspectos clave, brindando una visión completa del trabajo realizado.
