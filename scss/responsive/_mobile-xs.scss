@@ -40,10 +40,7 @@
     //header
     .main__header{
         .header__navbar{
-            .menu-responsive{
-                order: 1;
-                flex: 1;
-            }
+            
             .nav__container{
                 display: none;
             }
@@ -63,6 +60,10 @@
                 font-size: $font-size-xxl; 
             }
         }
+    }
+    // Icono menu responsive
+    .dropdown--standard{ 
+        right: 16px;
     }
     //Banners
     .banner-group{

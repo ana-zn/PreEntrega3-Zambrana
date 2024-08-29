@@ -60,11 +60,14 @@
                     .footer__social-list-item{
                         list-style: none;
                         width: 100%;
+                        
                         .footer__social-link{
                             width: 100%;
+                            color: $primarycolor;
                         }
                         i{
-                            font-size: 32px;
+                            font-size: $font-size-xxl;
+                            color: $primarycolor;
                         }
                     }
                 }

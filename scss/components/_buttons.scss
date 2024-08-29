@@ -3,8 +3,10 @@
     display: flex;
     flex-direction: column;
     justify-content: start; 
-    gap:32px; 
+    gap:32px;
+   
     .btn{
+        color: $primarycolor;
         display: inline-flex; 
         width: auto;
         align-items: center;
@@ -19,52 +21,13 @@
         border: 2px solid $primarycolor;
     }
     .btn--1{
-        border:$border-primary; 
-    }
-    .btn--2{
-        position: relative;
-        color: $secondarycolor;
-        border: $border-secondary; 
-        z-index: 1;
-        overflow: hidden;
-        padding: 8px 24px; 
-        &::before{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 200%;
-            left: 0;
-            top: -200%;
-            background-color: $secondarycolor;
-            border-radius: 50%;
-            transition: all 0.6s ease;
-            z-index: -1;
-        }
-        &:hover {
-            color: $primarycolor;
-    
-            &::before{
-                top: 0;
-                border-radius: 0%;
-            }
-        }
-    }
-
-    .btn--3{
-        @extend .btn--1; 
-        font-size:$font-size-m; 
-        justify-content: center;
-        text-transform: uppercase;
-    }
-    //Register buton
-    .btn--4 { 
         position: relative;
         overflow: hidden; 
         display: flex; 
         z-index: 1;
         justify-content: center;
         width: 90%;
-        padding: 16px 24px;
+        padding: 16px 32px;
         gap: 16px; 
         font-size: $font-size-l;
         font-weight: 600; 
@@ -94,7 +57,36 @@
             }
         }
     }
+    //Estilos del segundo boton
+    .btn--2{
+        @extend .btn--1; 
+        position: relative;
+        color: $secondarycolor;
+        border: $border-secondary; 
+        font-weight: 400;
+        white-space: nowrap;
+        &::before{
+            content: "";
+            background-color: $secondarycolor;
+        }
+        &:hover {
+            color: $primarycolor;
+        }
+    }
+    .btn--3{
+        font-size:$font-size-m; 
+        justify-content: center;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $primarycolor;
+            color: $secondarycolor;
+        }
+    } 
+   
 }
+.containner--btn2{
+    align-items: flex-end;
+} 
 // Menú de categorías
 .menu-categories__buttons{
 
@@ -111,6 +103,7 @@
             border-radius: 100px;
             padding: 8px 0;
             .menu-categories__link{
+                color: $primarycolor;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: $font-size-l; 

@@ -17,125 +17,73 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <!------------------------Botones----------------------->
-        <div class="container__button">
-            <a href="#" class="btn">button <span class="material-symbols-outlined">arrow_forward</span></a>
-        </div>
-        <!------------------------Grilla----------------------->
-        <section class="content__container grid--container">
-            <div class="grid-container__item">
-                <img src="../aseets/imagenes/home/blue-chocolatte.png" alt="Chocolate negro amargo, marca Blue" class="grid-container__image">
-            </div> 
-            <div class="grid-container__item">
-                <img src="../aseets/imagenes/home/protein-gummies.png" alt="Gomitas Proteicas" class="grid-container__image">
-            </div>  
-            <div class="grid-container__item">
-                <img src="../aseets/imagenes/home/soda-tropical.png" alt="Soda tropical sabor naranja, baja en calorias" class="grid-container__image">
-            </div>  
-            <div class="grid-container__item">
-                <img src="../aseets/imagenes/home/packaging-cereal.jpg" alt="Granola Yellow" class="grid-container__image">
-            </div>  
-            <div class="grid-container__item">
-                <img src="../aseets/imagenes/home/coffee-beans.png" alt="Cafe Organico" class="grid-container__image">
-            </div>  
-            <div class="grid-container__item">
-                <img src="../aseets/imagenes/home/white-chocolate.png" alt="Chocolate Blanco" class="grid-container__image">
-            </div>          
-        </section>
-        <!------------------------Tarjetas de Recetas----------------------->
-        
-        <!------------------------Titulo----------------------->
-        <div class="title-container-third">
-            <hr>
-            <h2>¿Qué cocinar?</h2>
-            <hr>
-        </div>
-         <!------------------------Titulo----------------------->
-         <section class="content__container area-container-card">
-            <!------------------------------Primer Tarjeta------------------------------>
-            <div class="card-container">
-                <!--Contenedor Imagen y contenido-->
-                 <!--Imagen-->
-                <div class="card-container__item">
-                    <div class="card-item__image">
-                        <img src="../aseets/imagenes/recipes/cereals-yogurt.png" alt="Yogurt con Granola Energetica" class="card-item__img" >
-                        <span class="card-item__label">Destacado</span>
-                    </div>
-                    <!--Contenido--> 
-                    <div class="card-item__content">
-                        <h4 class="card-item__title">Yogurt con Granola Energética</h4>
-                        <p class="card-item__description">
-                            Cada cucharada combina yogurt griego cremoso con granola casera, rica en fibras, proteínas y antioxidantes. Perfecta para tus antojos matutinos o como refrigerio revitalizante durante el día.
-                        </p>
-                        <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <!------------------------------Segunda Tarjeta------------------------------>
-                <div class="card-container__item">
-                    <!--Contenedor Imagen y contenido-->
-                    <!--Imagen-->
-                    <div class="card-item__image">
-                        <img src="../aseets/imagenes/recipes/Blueberry-muffin.png" alt="Muffins de arandanos" class="card-item__img">
-                        <span class="card-item__label">Destacado</span>
-                    </div>
-                    <!--Contenido--> 
-                    <div class="card-item__content">
-                        <h4 class="card-item__title">Muffins con Arandanos</h4>
-                        <p class="card-item__description">
-                            Una combinación perfecta entre los arandanos y la suave harina integral, cada muffin está diseñado para complacer y alimentar tu cuerpo de manera equilibrada. Prepáralos fácilmente en casa y disfruta de una indulgencia consciente en cualquier momento del día.
-                        </p>
-                        <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <!------------------------------Tercer Tarjeta------------------------------>
-                <div class="card-container__item">
-                    <!--Contenedor Imagen y contenido-->
-                    <!--Imagen-->
-                    <div class="card-item__image">
-                        <img src="../aseets/imagenes/recipes/cookie.png" alt="Galletas con Chips de Chocolate" class="card-item__img">
-                        <span class="card-item__label">Destacado</span>
-                    </div>
-                    <div class="card-item__content">
-                        <h4 class="card-item__title">Galletas con Chips de Chocolate</h4>
-                        <p class="card-item__description">
-                            Con harina de avena integral, miel orgánica y trozos de chocolate negro, cada galleta es una deliciosa opción para satisfacer tus antojos sin comprometer tu salud. Perfectas para acompañar un café o como un regalo dulce y nutritivo para tus seres queridos.
-                        </p>
-                        <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
-                <!------------------------------Cuarta Tarjeta------------------------------>
-                <div class="card-container__item">
-                    <!--Contenedor Imagen y contenido-->
-                    <!--Imagen-->
-                    <div class="card-item__image">
-                        <img src="../aseets/imagenes/recipes/ice-cream-blueberries.png" alt="Helado de frutos Rojos" class="card-item__img">
-                        <span class="card-item__label">Destacado</span>
-                    </div>
-                    <div class="card-item__content">
-                        <h4 class="card-item__title">Helado de Frutilla</h4>
-                        <p class="card-item__description">
-                            Una deliciosa opción cargada de frescura. Cada cucharada ofrece una experiencia perfecta para satisfacer tus antojos sin remordimientos. Ideal para cualquier ocasión, este helado es la elección perfecta para quienes valoran el sabor y la calidad de los ingredientes naturales.
-                        </p>
-                        <!--Boton-->
-                        <div class="card-item__button container__button">
-                            <a href="#" class="btn btn-secondary">Ver más</a>
-                        </div>
-                    </div>
-                </div>
+       <!--Contenedor Header-->
+      <!--Contenedor Header-->
+      <header class="main__header header--home">
+        <div class="header__navbar nav-bar--home">
+            <!-- Contenedor de la barra de navegación -->
+            <nav class="nav__container header__nav--home">
+                <!-- Links del Menú -->
+                <ul class="header__nav-list nav-list--home">
+                    <li class="header__nav-list-item nav-list-item--home active"><a class="header__nav-link nav-link--home" href="index.html">Inicio</a></li>
+                    <li class="header__nav-list-item nav-list-item--home"><a class="header__nav-link nav-link--home" href="html/menubebidas.html">Menú</a></li>
+                    <li class="header__nav-list-item nav-list-item--home"><a class="header__nav-link nav-link--home" href="html/productos.html">Productos</a></li>
+                    <li class="header__nav-list-item nav-list-item--home"><a class="header__nav-link nav-link--home" href="html/nosotros.html">Nosotros</a></li>
+                    <li class="header__nav-list-item nav-list-item--home"><a class="header__nav-link nav-link--home" href="html/contacto.html">Contacto</a></li>    
+                </ul>
+            </nav>
+            <!-- Svg - Contenedor del Logo -->
+            <div class="header__logo logo--header">
+                <img src="aseets/svg/crumblylogo-postive.svg" alt="logo de crumbly">
             </div>
-        </section>
-        
+            <!-- Contenedor del buscador y opciones de usuario -->
+            <section class="header__search search--home">
+                <!-- Campo de búsqueda -->
+                <div class="search-container">
+                    <i class='bx bx-search'></i>
+                    <input type="text" class="search-bar__input" placeholder="Buscar...">
+                </div>
+                <!-- Contenedor del carrito de compras y perfil de usuario -->
+                <div class="header__user-items">
+                    <!-- Icono del perfil de usuario -->
+                    <div class="header__user-icon">
+                        <a href="#"><span class="material-symbols-outlined home">person</span></a>
+                    </div>
+                    <!-- Icono del carrito de compras -->
+                    <div class="header__user-icon">
+                        <a href="#"><span class="material-symbols-outlined home">shopping_basket</span></a>
+                    </div>
+                </div>
+            </section>
+            <!--Icono de Menu Para responsive-->
+             <div class="toggle_btn toggle--home">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown__menu dropdown--home">
+                <ul class="dropdown__menu-list nav-list--home">
+                    <li class="dropdown__menu-list-item dropdown__menu-item--home"><a class="dropdown__menu-link dropdown__menu-link--home" href="index.html">Inicio</a></li>
+                    <li class="dropdown__menu-list-item dropdown__menu-item--home"><a class="dropdown__menu-link dropdown__menu-link--home" href="html/menubebidas.html">Menú</a></li>
+                    <li class="dropdown__menu-list-item dropdown__menu-item--home"><a class="dropdown__menu-link dropdown__menu-link--home" href="html/productos.html">Productos</a></li>
+                    <li class="dropdown__menu-list-item dropdown__menu-item--home"><a class="dropdown__menu-link dropdown__menu-link--home" href="html/nosotros.html">Nosotros</a></li>
+                    <li class="dropdown__menu-list-item dropdown__menu-item--home"><a class="dropdown__menu-link dropdown__menu-link--home" href="html/contacto.html">Contacto</a></li>    
+                </ul>
+            </div>
+        </div>
+        <!-- Contenedor de Título Principal -->
+        <div class="title-primary">
+            <h1 class="title-primary__heading">
+                Disfruta de una parada saludable y encuentra ingredientes que nutren tu vida
+            </h1>
+             <!--Contenedor Button-->
+             <div class="container__button">
+                <a href="#" class="btn btn--2">Comprar ahora</a>
+            </div>
+        </div>
+    </header>
+    <script src="../js/navbar.js"></script>
     </body>
 </html>
 

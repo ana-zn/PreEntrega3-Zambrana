@@ -1,7 +1,7 @@
 @import "../utilities/variables";
 
 /* Contenedor Header estándar */
-.main__header {
+.main__header{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   width: 100%;
   padding: 0 144px;
   background-color: $grey-background;
-
+  
   /* Barra de navegación */
   .header__navbar {
     display: flex;
@@ -18,14 +18,9 @@
     width: 100%;
     align-items: center;
     margin: 16px 0;
-    .menu-responsive{
-      display: none;
-      i{
-        font-size: $font-size-xl; 
-        color: $primarycolor; 
-      }
-    }
-
+    position: relative;
+   
+    
     .nav__container {
       display: flex;
       flex-grow: 1;
@@ -71,6 +66,7 @@
         }
       }
     }
+   
   }
 
   /* Contenedor logo */
@@ -93,6 +89,10 @@
     .header__user-items {
       display: flex;
       flex-direction: row;
+      .material-symbols-outlined{
+        color: $primarycolor;
+      }
+     
     }
   }
 }
@@ -106,18 +106,14 @@
   background-position: center;
   height: 784px;
   margin-bottom: 56px;
-  transition: background-color 0.3s ease; // Añadir transición para el fondo
 
   .nav-bar--home {
-    .menu--responsive{
-      display: none;
-      i{
-        font-size: $font-size-l;
-        color: $secondarycolor;
-      }
+    .toggle--home{
+      color: $secondarycolor;
     }
     //Estilos de la barra de Navegacion del header HOME
     .header__nav--home{
+      
       .nav-list--home{
         .nav-list-item--home{
          
@@ -158,7 +154,12 @@
         color:$secondarycolor; 
       }
     }
-
+    .header__user-icon{
+      .material-symbols-outlined{
+        color: $secondarycolor;
+      }
+    }
+    
     /* Contenedor iconos de usuario y carrito de compras */
     .header__user-items span {
       color: $secondarycolor;

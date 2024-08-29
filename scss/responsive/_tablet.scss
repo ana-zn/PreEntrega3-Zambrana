@@ -61,17 +61,8 @@
     .main__header{
         .header__navbar{
             justify-content: space-between;
-            .menu-responsive{
-                display: flex;
-                flex-grow: 1;
-                order: 3;
-                i{
-                    font-size: $font-size-xxl; 
-                    cursor: pointer;
-                }
-            }
             .nav__container{
-                height:0px;
+                height: 0;
                 position: absolute;
                 top: 80px; 
                 left: 0;
@@ -80,17 +71,23 @@
                 background: #11101e;
                 transition: 0.5s;
                 overflow: hidden;
-                .active{
+                &.active {
                     height: 450px;
                 }
-                .header__nav-list{
+                .header__nav-list {
                     display: block;
                     width: fit-content;
                     margin: 80px auto 0 auto;
                     text-align: center;
-                    transition: 0.5s ;
+                    transition: 0.5s;
                     opacity: 0;
+            
+                    
                 }
+                
+            }
+            .nav__container.active & {
+                opacity: 1;
             }
             .header__logo{
                 justify-content: flex-start;
@@ -106,16 +103,46 @@
             }
         }
     }
-    
+    //dropdown e icono
+    .toggle_btn{
+        display: block;
+        margin-left: 4px;
+    }
+    .dropdown__menu{
+        display: block;
+    }
     .header--home{
         height: 704px;
         .nav-bar--home{
             .header__nav--home{
+                height: 0;
+                position: absolute;
+                top: 80px; 
+                left: 0;
+                right: 0; 
+                width: 100vw;
+                background: #11101e;
+                transition: 0.5s;
+                overflow: hidden;
+                &.active {
+                    height: 450px;
+                }
                 .nav-list--home{
                     display: none;
                 }
+                .nav-list--home{
+                    display: block;
+                    width: fit-content;
+                    margin: 80px auto 0 auto;
+                    text-align: center;
+                    transition: 0.5s;
+                    opacity: 0;
+                }
                 
             }
+        }
+        .header__nav--home.active & {
+            opacity: 1;
         }
     }
     

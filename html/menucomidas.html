@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <!-- Meta Tags -->
         <meta charset="UTF-8">
@@ -17,15 +17,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0">
+        <!--Vinculación-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 <body>
     <!--Contenedor Header-->
     <header class="main__header">
         <div class="header__navbar">
-            <!-- Contenedor de la barra de navegación -->
-            <div class="menu-responsive">
-                <i class='bx bx-menu'></i>
-            </div>
             <!-- Contenedor de la barra de navegación -->
             <nav class="nav__container">
                 <!-- Links del Menú -->
@@ -62,6 +60,21 @@
                 </div>
             </section>
         </div>
+        <!--Icono de Menu-responsive-->
+        <section class="menu-responsive">
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown__menu dropdown--standard">
+                <ul class="dropdown__menu-list ">
+                    <li class="dropdown__menu-list-item"><a class="dropdown__menu-link" href="../index.html">Inicio</a></li>
+                    <li class="dropdown__menu-list-item"><a class="dropdown__menu-link" href="../html/menubebidas.html">Menú</a></li>
+                    <li class="dropdown__menu-list-item"><a class="dropdown__menu-link" href="../html/productos.html">Productos</a></li>
+                    <li class="dropdown__menu-list-item"><a class="dropdown__menu-link" href="../html/nosotros.html">Nosotros</a></li>
+                    <li class="dropdown__menu-list-item"><a class="dropdown__menu-link" href="../html/contacto.html">Contacto</a></li>    
+                </ul>
+            </div>
+        </section>
     </header>
     <!------------------------------------------------------------------>
     <!--Contenedor Main-->
@@ -308,7 +321,7 @@
                             <!--Item 3-->
                             <div class="category__item">
                                 <div class="category__image">
-                                    <img src="../aseets/imagenes/menu/Avocadotoast.png" alt="Avocado Toast" class="lazyload">
+                                    <img src="../aseets/imagenes/menu/Avocadotoast.png" alt="Rebanadas de tostadas con aguacate y huevos pochados, en plato blanco" class="lazyload">
                                 </div>
                                 <div class="category__details">
                                     <div class="catagory__detailes-group">
@@ -328,7 +341,7 @@
                              <!--Item 4-->
                              <div class="category__item">
                                 <div class="category__image">
-                                    <img src="../aseets/imagenes/menu/omelete.png" alt="Omelette" class="lazyload">
+                                    <img src="../aseets/imagenes/menu/omelete.png" alt="Un omelette dorado y esponjoso, servido en un plato blanco con perejil como decoración." class="lazyload">
                                 </div>
                                 <div class="category__details">
                                     <div class="catagory__detailes-group">
@@ -413,5 +426,6 @@
             <p>©2024 | Crumbly</p>
         </div>
     </footer>
+    <script src="../js/navbar.js"></script>
 </body>
 </html>
