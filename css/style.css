@@ -157,7 +157,7 @@ $font-size-xs: 0.5rem;
 
 /* Header HOME, archivo index.html */
 .header--home {
-  background-image: url(/aseets/imagenes/home/background.jpg);
+  background-image: url(../aseets/imagenes/home/background.jpg);
   flex-direction: column;
   justify-content: flex-start;
   background-size: cover;
@@ -1801,6 +1801,9 @@ $font-size-xs: 0.5rem;
   }
   .container_content .container {
     flex-direction: column;
+  }
+  .register .register__text {
+    text-align: center;
   }
   .register .register__button {
     width: 100%;
