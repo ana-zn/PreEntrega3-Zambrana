@@ -1,4 +1,17 @@
 @media (max-width: 490px){
+     //Padding de contenedores
+     .main__header,
+     .container__services,
+     .content__container,
+     .footer__primary {
+       padding: 0 16px;//
+     }
+     .banner-gradient {
+        padding: 24px 32px;
+        .banner-gradient__heading{
+          font-size: $font-size-xxl; 
+        }
+      }
     .header--home{
         height: 624px;
         margin-bottom: 40px;
@@ -8,7 +21,7 @@
     .title-primary{
         margin-top: 66px;
         .title-primary__heading{
-            font-size:2.25rem; 
+            font-size:$font-size-xxl-plus; 
             line-height: $line-height-medium; 
         }
     }
@@ -23,8 +36,12 @@
     } 
     //Botones
     .menu-categories{
+        .menu-categories__buttons--none{
+            display: none;
+        }
         .menu-categories__buttons{
             padding: 8px 0px;
+            
             .menu-categories__list{
                 gap:4px; 
                 .menu-categories__list-item{
@@ -40,18 +57,12 @@
     //header
     .main__header{
         .header__navbar{
-            
             .nav__container{
                 display: none;
             }
-            .header__logo{
-               order: 2;
-               flex: 1;
-            }
             .header__search{
-                flex: 1;
                 justify-content: flex-end;
-                order: 3;
+
                 .search-container{
                     display: none;
                 }
@@ -107,8 +118,26 @@
 
     //Contenedor Contacto 
     .container_content{
-     margin-top: 32px;
-     padding: 16px 16px;
+     
+     flex-direction: column;
+     .container{
+        flex-direction: column;
+     }
+    }
+    //Botones
+    .register{
+        .register__button{
+            width: 100%;
+            .btn--1{
+                width: 100%;
+            }
+            
+        }
+    }
+    .container__button{
+        .btn--1{
+            width: 100%;
+        }
     }
   
 }

@@ -4,13 +4,15 @@
     .main__header,
     .container__services,
     .content__container,
-    .banner-gradient,
     .footer__primary {
       padding: 0 96px;
     }
   
     .banner-gradient {
       padding: 52px 96px;
+      .banner-gradient__heading{
+        font-size: $font-size-xxl-plus;
+      }
     }
     .footer{
         .footer__primary {
@@ -181,7 +183,7 @@
     //Contenedor Register
     .register{
         .register__title{
-            text-align: center;
+          text-align: center;
         }
     }
     //SERVICES - Home
@@ -284,7 +286,6 @@
   }
    //Contenedor Contacto 
    .container_content{
-    flex-direction: column;
     margin-top: 32px;
     padding: 24px 96px;
    }

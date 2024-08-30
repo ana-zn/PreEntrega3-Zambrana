@@ -1,4 +1,4 @@
-@media (max-width: 700px){
+@media (max-width: 720px){
     //Padding de contenedores
     .main__header,
     .container__services,
@@ -11,12 +11,12 @@
     .banner-gradient {
       padding: 24px 32px;
       .banner-gradient__heading{
-        font-size: $font-size-xxl; 
+        font-size: 2.5rem; 
       }
     }
-     //Header
+    //Header
      .header--home{
-        height: 664px;
+        height: 600px;
         margin-bottom: 40px;
     }
     
@@ -69,7 +69,7 @@
     .title-primary{
         margin-top: 86px;
         .title-primary__heading{
-            font-size:$font-size-xxl-plus; 
+            font-size:$font-size-xxxl; 
         }
     }
     // Icono menu responsive
@@ -84,10 +84,15 @@
         height: 320px;
     }
    
-    .register{
+     //Contenedor Register
+     .register{
         .register__title{
-            text-align: center;
+          font-size: $font-size-xxl;
         }
+        .register__text{
+            font-size: $font-size-l;
+        }
+
     }
     //Valoraciones de Usuarios
     .rating__content{
@@ -135,6 +140,9 @@
                 gap:16px; 
                 padding-top: 16px;
                 max-width: 100%;
+                .content__title{
+                    font-size: $font-size-xxl;
+                }
             }
         }
     }
@@ -183,8 +191,15 @@
     }
     //Contenedor Contacto 
     .container_content{
-        margin-top: 16px;
+        flex-direction: column;
         padding: 16px 32px;
+    }
+
+    //Titulos
+    .title-container__third{
+        .title-container__title{
+            font-size: $font-size-xxl;
+        }
     }
    
 }
