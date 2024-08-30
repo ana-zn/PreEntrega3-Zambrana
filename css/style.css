@@ -157,7 +157,7 @@ $font-size-xs: 0.5rem;
 
 /* Header HOME, archivo index.html */
 .header--home {
-  background-image: url(../aseets/imagenes/home/background.png);
+  background-image: url(/aseets/imagenes/home/background.jpg);
   flex-direction: column;
   justify-content: flex-start;
   background-size: cover;
@@ -1584,7 +1584,7 @@ $font-size-xs: 0.5rem;
     font-size: 2.5rem;
   }
   .header--home {
-    height: 664px;
+    height: 600px;
     margin-bottom: 40px;
   }
   .footer .footer__primary {
